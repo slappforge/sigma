@@ -120,6 +120,8 @@ Although only the SNS topic resources can be used as triggers, all 3 types of SN
   <img width="400" src="./images/sns/res_types.png">
 </p>
 
+---
+
 ### SNS Topic resource
 
 When **Topic** is selected as the resource type, first an existing topic should be selected or a new topic should be defined for the operations. This procedure is exactly similar to [setting a SNS topic](#set-topic) when a SNS trigger is defined. Once the topic is configured, an operation to be injected can be selected from the **Operation** drop-down. Currently Sigma supports the following operations on SNS topics.
@@ -185,3 +187,16 @@ Confirmation Token | :white_check_mark:  | :white_check_mark:   | Confirmation t
 Field           | Required            | Supports Variables   | Description
 ---             | :---:               | :---:                | ---
 Subscription ID | :white_check_mark:  | :white_check_mark:   | The ID of the subscription endpoint to be removed
+
+---
+
+### SNS Direct SMS
+
+SNS Direct SMS feature can be used to send text messages directly to a phone number via SNS, without having to subscribe to a topic.  Following are the fields related to this operation.
+
+Field           | Required            | Supports Variables   | Description
+---             | :---:               | :---:                | ---
+Mobile Number | :white_check_mark:  | :x:   | The mobile number to send the text message
+Message | :white_check_mark:  | :white_check_mark:   | The message to be sent. If the message is longer than 160 characters, it will be treated as multiple text messages.
+Message Type | :white_check_mark:  | :x:   | The type of the message, which can be either `Promotional` or `Transactional`. `Promotional` type can be used for non-critical messages, such as marketing messages, where SNS optimizes the message delivery to incur the lowest cost. `Transactional` type can be used for critical messages that support customer transactions, such as one-time passcodes for multi-factor authentication, where SNS optimizes the message delivery to achieve the highest reliability.
+Sender ID | :x:  | :white_check_mark:   | The sender ID to be displayed as the message sender on the receiving device. This can contain up to 11 alphanumeric characters, including at least one letter and no spaces.
