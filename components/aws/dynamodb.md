@@ -1,1 +1,1 @@
-# AWS Dynamo DB
+# ![](images/dynamodb/dynamodb_icon.svg) AWS Dynamo DB

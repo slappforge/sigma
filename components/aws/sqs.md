@@ -1,1 +1,1 @@
-# AWS SQS (Simple Queue Service)
+# ![](images/sqs/sqs_icon.svg) AWS SQS (Simple Queue Service)

@@ -1,1 +1,1 @@
-# AWS API Gateway
+# ![](images/apig/apig_icon.svg) AWS API Gateway

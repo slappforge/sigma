@@ -1,4 +1,4 @@
-# ![SNS Logo](images/sns/sns_icon.svg) AWS SNS (Simple Notification Service)
+# ![](images/sns/sns_icon.svg) AWS SNS (Simple Notification Service)
 
 
 Amazon Simple Notification Service (SNS) is a flexible, fully managed pub-sub messaging and mobile notifications service

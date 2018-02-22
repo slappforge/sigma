@@ -1,1 +1,1 @@
-# AWS RDS (Relational Database System)
+# ![](images/rds/rds_icon.svg)  AWS RDS (Relational Database System)

@@ -1,1 +1,1 @@
-# AWS Kinesis
+# ![](images/kinesis/kinesis_icon.svg)  AWS Kinesis

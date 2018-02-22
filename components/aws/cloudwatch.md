@@ -1,1 +1,1 @@
-# AWS CloudWatch
+# ![](images/cloudwatch/cloudwatch_icon.svg) AWS CloudWatch
