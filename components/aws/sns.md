@@ -77,7 +77,7 @@ To select an existing topic, first go to the **Existing Topic** tab of the confi
 
 To define a new topic, first go to the **New Topic** tab of the configuration panel. Then a **Topic Name** should be provided, and this topic name must be non-empty and should contain only alphanumeric characters, hyphens (-), or underscores (\_). Then a **Display Name** also should be provided and it should less than 10 characters in length.
 
-### Adding subscriptions to a topic
+### <a name="add-topic-subscriptions">Adding subscriptions to a topic
 
 Sigma also provides the facility to add new subscriptions to an existing or a newly defined topic. For that, first click on the **Subscriptions** button below the topic configuration fields, which will open the subscriptions panel of the topic.
 
@@ -98,18 +98,90 @@ To add a new subscription, first a subscription protocol should be selected from
 - SMS
 
 Subscription Protocol | Endpoint Type | Example
------------- | -------------
-HTTP | An HTTP URL | `http://slappforge.com`
-HTTPS | An HTTPS URL | `https://slappforge.com`
-Email | A valid email address | `info@slappforge.com`
-Email JSON | A valid email address | `info@slappforge.com`
-SQS | ARN of a SQS queue | `arn:aws:sqs:us-east-1:111111111111:my-queue`
+---                   | ---           | ---
+HTTP                  | An HTTP URL | `http://slappforge.com`
+HTTPS                 | An HTTPS URL | `https://slappforge.com`
+Email                 | A valid email address | `info@slappforge.com`
+Email JSON            | A valid email address | `info@slappforge.com`
+SQS                   | ARN of a SQS queue | `arn:aws:sqs:us-east-1:111111111111:my-queue`
 Application (Platform Application) | ARN of a SNS Platform Application | `arn:aws:sns:us-east-1:111111111111:app/GCM/my-app`
-Lambda | ARN of a Lambda function | `arn:aws:lambda:us-east-1:111111111111:function:my-function`
-SMS | A valid phone number | `+94123123123`
+Lambda                | ARN of a Lambda function | `arn:aws:lambda:us-east-1:111111111111:function:my-function`
+SMS                   | A valid phone number | `+94123123123`
 
 Once the subscription protocol and endpoint are defined, click the + button to add the subscription.
 
 ---
 
 ## SNS for Operations
+
+Although only the SNS topic resources can be used as triggers, all 3 types of SNS resources can be used inside Lambda code as operations. For that, a SNS resource should be dragged from the resources panel and dropped on the required line of the lambda code editor. Then the required **Resource Type** should be selected from the SNS resource configuration panel.
+
+<p align="center">
+  <img width="400" src="./images/sns/res_types.png">
+</p>
+
+### SNS Topic resource
+
+When **Topic** is selected as the resource type, first an existing topic should be selected or a new topic should be defined for the operations. This procedure is exactly similar to [setting a SNS topic](#set-topic) when a SNS trigger is defined. Once the topic is configured, an operation to be injected can be selected from the **Operation** drop-down. Currently Sigma supports the following operations on SNS topics.
+
+- Publish Message
+- Get Topic Attributes
+- List Topic Subscriptions
+- Set Topic Attribute
+- Add Topic Subscription
+- Confirm Topic Subscription
+- Remove Topic Subscription
+
+#### Publish Message
+
+**Publish Message** operation can be used to programmatically publish a message to a SNS topic. Following are the fields related to this operation.
+
+Field              | Required            | Supports Variables  | Description
+---                | :---:               | :---:                 | ---
+Subject            | :x:                 | :white_check_mark:  | Subject of the message
+Message            | :white_check_mark:  | :white_check_mark:  | Content of the message
+Message Attributes | :x:                 | :white_check_mark:  | A set of key-value pairs that should be set as message attributes. The type of the value can be `String`, `String Array`, `Number` or `Binary`.
+
+#### Get Topic Attributes
+
+**Get Topic Attributes** operation can be used to programmatically retrieve the current attributes set for a SNS topic. This operation does not require any operation level parameters.
+
+#### List Topic Subscriptions
+
+**List Topic Subscriptions** operation can be used to programmatically retrieve the list of current subscriptions of a SNS topic. This operation does not require any operation level parameters.
+
+#### Set Topic Attribute
+
+**Set Topic Attribute** operation can be used to programmatically set the value of a SNS topic attribute. Following are the fields related to this operation.
+
+Field              | Required            | Supports Variables  | Description
+---                | :---:               | :---:               | ---
+Attribute Type     | :white_check_mark:  | :x:  | Attribute to set the value for. This can be `Policy`, `Display Name` or `Delivery Policy`
+Attribute Value     | :white_check_mark:  | :white_check_mark:  | Value to be set for the attribute
+
+#### Add Topic Subscription
+
+**Add Topic Subscription** operation can be used to programmatically add a new subscription to a SNS topic. Following are the fields related to this operation.
+
+Field                 | Required            | Supports Variables  | Description
+---                   | :---:               | :---:               | ---
+Subscription Protocol | :white_check_mark:  | :x:                 | Protocol of the subscription to be added. This can be `HTTP`, `HTTPS`, `Email`, `Email JSON`, `SQS`, `Application`, `Lambda` or `SMS`.
+Endpoint              | :white_check_mark:  | :white_check_mark:  | Subscription endpoint to be added
+
+*Please refer [Adding subscriptions to a topic](#add-topic-subscriptions) section for more details on subscription protocols and related endpoints.*
+
+#### Confirm Topic Subscription
+
+**Confirm Topic Subscription** operation can be used to programmatically confirm a subscription for a SNS topic. Following are the fields related to this operation.
+
+Field              | Required            | Supports Variables   | Description
+---                | :---:               | :---:                | ---
+Confirmation Token | :white_check_mark:  | :white_check_mark:   | Confirmation token received by the subscription endpoint
+
+#### Confirm Topic Subscription
+
+**Remove Topic Subscription** operation can be used to programmatically remove an existing subscription from a SNS topic. Following are the fields related to this operation.
+
+Field           | Required            | Supports Variables   | Description
+---             | :---:               | :---:                | ---
+Subscription ID | :white_check_mark:  | :white_check_mark:   | The ID of the subscription endpoint to be removed
