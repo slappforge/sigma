@@ -178,7 +178,7 @@ Field              | Required            | Supports Variables   | Description
 ---                | :---:               | :---:                | ---
 Confirmation Token | :white_check_mark:  | :white_check_mark:   | Confirmation token received by the subscription endpoint
 
-#### Confirm Topic Subscription
+#### Remove Topic Subscription
 
 **Remove Topic Subscription** operation can be used to programmatically remove an existing subscription from a SNS topic. Following are the fields related to this operation.
 
