@@ -1,7 +1,9 @@
 # ![SNS Logo](images/sns/sns_icon.svg) AWS SNS (Simple Notification Service)
 
 
-Amazon Simple Notification Service (SNS) is a flexible, fully managed pub-sub messaging and mobile notifications service for coordinating the delivery of messages to subscribing endpoints and clients. With SNS you can fan-out messages to a large number of subscribers, including distributed systems and services, and mobile devices.
+Amazon Simple Notification Service (SNS) is a flexible, fully managed pub-sub messaging and mobile notifications service
+for coordinating the delivery of messages to subscribing endpoints and clients. With SNS you can fan-out messages to a
+large number of subscribers, including distributed systems and services, and mobile devices.
 
 The Sigma IDE currently supports the following 3 types of SNS resources.
 - SNS Topics (as triggers as well as for operations)
@@ -10,9 +12,12 @@ The Sigma IDE currently supports the following 3 types of SNS resources.
 
 ## SNS as a Trigger
 
-A SNS topic can be used as a trigger for a lambda function within Sigma. For that, a SNS resource should be dragged from the resources panel and dropped on top of the `event` parameter of the lambda handler. Then the SNS topic configuration panel can be used to [set an SNS topic](#set-topic)  as the trigger.
+A SNS topic can be used as a trigger for a lambda function within Sigma. For that, a SNS resource should be dragged from
+the resources panel and dropped on top of the `event` parameter of the lambda handler. Then the SNS topic configuration
+panel can be used to [set an SNS topic](#set-topic)  as the trigger.
 
-When a SNS topic is configured as a trigger to a Lambda function, that function is invoked each time a message is published to the topic. The structure of trigger event received by Lambda function is of the following format.
+When a SNS topic is configured as a trigger to a Lambda function, that function is invoked each time a message is
+published to the topic. The structure of trigger event received by Lambda function is of the following format.
 
 ````
 {
@@ -67,7 +72,9 @@ In SNS topic configuration panel, it is possible either to select an existing SN
   <img width="400" src="./images/sns/existing_topic.png">
 </p>
 
-To select an existing topic, first go to the **Existing Topic** tab of the configuration panel. Then the **Topic Name** drop-down will be populated with all the already defined SNS topics in your AWS account for the current project region. You can simply select the required topic from that list.
+To select an existing topic, first go to the **Existing Topic** tab of the configuration panel. Then the **Topic Name**
+drop-down will be populated with all the already defined SNS topics in your AWS account for the current project region.
+You can simply select the required topic from that list.
 
 #### Defining a new topic
 
@@ -75,19 +82,26 @@ To select an existing topic, first go to the **Existing Topic** tab of the confi
   <img width="400" src="./images/sns/new_topic.png">
 </p>
 
-To define a new topic, first go to the **New Topic** tab of the configuration panel. Then a **Topic Name** should be provided, and this topic name must be non-empty and should contain only alphanumeric characters, hyphens (-), or underscores (\_). Then a **Display Name** also should be provided and it should less than 10 characters in length.
+To define a new topic, first go to the **New Topic** tab of the configuration panel. Then a **Topic Name** should be
+provided, and this topic name must be non-empty and should contain only alphanumeric characters, hyphens (-), or
+underscores (\_). Then a **Display Name** also should be provided and it should less than 10 characters in length.
 
 ### <a name="add-topic-subscriptions">Adding subscriptions to a topic
 
-Sigma also provides the facility to add new subscriptions to an existing or a newly defined topic. For that, first click on the **Subscriptions** button below the topic configuration fields, which will open the subscriptions panel of the topic.
+Sigma also provides the facility to add new subscriptions to an existing or a newly defined topic. For that, first click
+on the **Subscriptions** button below the topic configuration fields, which will open the subscriptions panel of the topic.
 
 <p align="center">
   <img width="400" src="./images/sns/subscriptions.png">
 </p>
 
-If you are using an existing topic which already has any subscriptions, they will be shown under **Existing Subscriptions**, and they cannot be changed. The new subscriptions you have defined through Sigma will be shown under **New Subscriptions** and any one of them can be removed by clicking on the remove button in-front.
+If you are using an existing topic which already has any subscriptions, they will be shown under **Existing Subscriptions**,
+and they cannot be changed. The new subscriptions you have defined through Sigma will be shown under **New Subscriptions**
+and any one of them can be removed by clicking on the remove button in-front.
 
-To add a new subscription, first a subscription protocol should be selected from the drop-down on the left and then a suitable subscription endpoint should be specified in the right text box. Currently the following types of subscription protocols are supported.
+To add a new subscription, first a subscription protocol should be selected from the drop-down on the left and then a
+suitable subscription endpoint should be specified in the right text box. Currently the following types of subscription
+protocols are supported.
 - HTTP
 - HTTPS
 - Email
@@ -118,7 +132,9 @@ Once the subscription protocol and endpoint are defined, click the + button to a
 
 ## SNS for Operations
 
-Although only the SNS topic resources can be used as triggers, all 3 types of SNS resources can be used inside Lambda code as operations. For that, a SNS resource should be dragged from the resources panel and dropped on the required line of the lambda code editor. Then the required **Resource Type** should be selected from the SNS resource configuration panel.
+Although only the SNS topic resources can be used as triggers, all 3 types of SNS resources can be used inside Lambda
+code as operations. For that, a SNS resource should be dragged from the resources panel and dropped on the required line
+of the lambda code editor. Then the required **Resource Type** should be selected from the SNS resource configuration panel.
 
 <p align="center">
   <img width="400" src="./images/sns/res_types.png">
@@ -128,7 +144,10 @@ Although only the SNS topic resources can be used as triggers, all 3 types of SN
 
 ### SNS Topic resource
 
-When **Topic** is selected as the resource type, first an existing topic should be selected or a new topic should be defined for the operations. This procedure is exactly similar to [setting a SNS topic](#set-topic) when a SNS trigger is defined. Once the topic is configured, an operation to be injected can be selected from the **Operation** drop-down. Currently Sigma supports the following operations on SNS topics.
+When **Topic** is selected as the resource type, first an existing topic should be selected or a new topic should be
+defined for the operations. This procedure is exactly similar to [setting a SNS topic](#set-topic) when a SNS trigger is
+defined. Once the topic is configured, an operation to be injected can be selected from the **Operation** drop-down.
+Currently Sigma supports the following operations on SNS topics.
 
 - Publish Message
 - Get Topic Attributes
@@ -140,7 +159,8 @@ When **Topic** is selected as the resource type, first an existing topic should 
 
 #### Publish Message
 
-**Publish Message** operation can be used to programmatically publish a message to a SNS topic. Following are the fields related to this operation.
+**Publish Message** operation can be used to programmatically publish a message to a SNS topic. Following are the fields
+related to this operation.
 
 Field              | Required            | Supports Variables  | Description
 ---                | :---:               | :---:                 | ---
@@ -150,15 +170,18 @@ Message Attributes | :x:                 | :white_check_mark:  | A set of key-va
 
 #### Get Topic Attributes
 
-**Get Topic Attributes** operation can be used to programmatically retrieve the current attributes set for a SNS topic. This operation does not require any operation level parameters.
+**Get Topic Attributes** operation can be used to programmatically retrieve the current attributes set for a SNS topic.
+This operation does not require any operation level parameters.
 
 #### List Topic Subscriptions
 
-**List Topic Subscriptions** operation can be used to programmatically retrieve the list of current subscriptions of a SNS topic. This operation does not require any operation level parameters.
+**List Topic Subscriptions** operation can be used to programmatically retrieve the list of current subscriptions of a
+SNS topic. This operation does not require any operation level parameters.
 
 #### Set Topic Attribute
 
-**Set Topic Attribute** operation can be used to programmatically set the value of a SNS topic attribute. Following are the fields related to this operation.
+**Set Topic Attribute** operation can be used to programmatically set the value of a SNS topic attribute. Following are
+the fields related to this operation.
 
 Field              | Required            | Supports Variables  | Description
 ---                | :---:               | :---:               | ---
@@ -167,18 +190,21 @@ Attribute Value     | :white_check_mark:  | :white_check_mark:  | Value to be se
 
 #### Add Topic Subscription
 
-**Add Topic Subscription** operation can be used to programmatically add a new subscription to a SNS topic. Following are the fields related to this operation.
+**Add Topic Subscription** operation can be used to programmatically add a new subscription to a SNS topic. Following
+are the fields related to this operation.
 
 Field                 | Required            | Supports Variables  | Description
 ---                   | :---:               | :---:               | ---
 Subscription Protocol | :white_check_mark:  | :x:                 | Protocol of the subscription to be added. This can be `HTTP`, `HTTPS`, `Email`, `Email JSON`, `SQS`, `Application`, `Lambda` or `SMS`.
 Endpoint              | :white_check_mark:  | :white_check_mark:  | Subscription endpoint to be added
 
-*Please refer [Adding subscriptions to a topic](#add-topic-subscriptions) section for more details on subscription protocols and related endpoints.*
+*Please refer [Adding subscriptions to a topic](#add-topic-subscriptions) section for more details on subscription
+protocols and related endpoints.*
 
 #### Confirm Topic Subscription
 
-**Confirm Topic Subscription** operation can be used to programmatically confirm a subscription for a SNS topic. Following are the fields related to this operation.
+**Confirm Topic Subscription** operation can be used to programmatically confirm a subscription for a SNS topic.
+Following are the fields related to this operation.
 
 Field              | Required            | Supports Variables   | Description
 ---                | :---:               | :---:                | ---
@@ -186,7 +212,8 @@ Confirmation Token | :white_check_mark:  | :white_check_mark:   | Confirmation t
 
 #### Remove Topic Subscription
 
-**Remove Topic Subscription** operation can be used to programmatically remove an existing subscription from a SNS topic. Following are the fields related to this operation.
+**Remove Topic Subscription** operation can be used to programmatically remove an existing subscription from a SNS topic.
+Following are the fields related to this operation.
 
 Field           | Required            | Supports Variables   | Description
 ---             | :---:               | :---:                | ---
@@ -196,7 +223,8 @@ Subscription ID | :white_check_mark:  | :white_check_mark:   | The ID of the sub
 
 ### SNS Direct SMS resource
 
-SNS Direct SMS resource can be used to send text messages directly to a phone number via SNS, without having to subscribe to a topic.  Following are the fields related to this operation.
+SNS Direct SMS resource can be used to send text messages directly to a phone number via SNS, without having to subscribe
+to a topic.  Following are the fields related to this operation.
 
 Field           | Required            | Supports Variables   | Description
 ---             | :---:               | :---:                | ---
@@ -209,15 +237,18 @@ Sender ID | :x:  | :white_check_mark:   | The sender ID to be displayed as the m
 
 ### SNS Platform Application resource
 
-SNS Platform Application resource can be used to send notification messages to mobile apps and devices. Currently Sigma only supports operations on existing Platform Applications.
+SNS Platform Application resource can be used to send notification messages to mobile apps and devices. Currently Sigma
+only supports operations on existing Platform Applications.
 
-When **Platform Application** is selected as the resource type, first an existing platform application should be selected from the **Application** drop-down for the operations.
+When **Platform Application** is selected as the resource type, first an existing platform application should be selected
+from the **Application** drop-down for the operations.
 
 <p align="center">
   <img width="400" src="./images/sns/existing_app.png">
 </p>
 
-Once the application is selected, an operation to be injected can be selected from the **Operation** drop-down. Currently Sigma supports the following operations on SNS Platform Applications.
+Once the application is selected, an operation to be injected can be selected from the **Operation** drop-down. Currently
+Sigma supports the following operations on SNS Platform Applications.
 
 - Publish Message
 - Create Endpoint
@@ -225,7 +256,8 @@ Once the application is selected, an operation to be injected can be selected fr
 
 #### Publish Message
 
-**Publish Message** operation can be used to programmatically publish a message to a platform application endpoint. Following are the fields related to this operation.
+**Publish Message** operation can be used to programmatically publish a message to a platform application endpoint.
+Following are the fields related to this operation.
 
 Field              | Required            | Supports Variables  | Description
 ---                | :---:               | :---:               | ---
@@ -236,17 +268,19 @@ Message Attributes | :x:                 | :white_check_mark:  | A set of key-va
 
 #### Create Endpoint
 
-**Create Endpoint** operation can be used to programmatically add a new endpoint to a platform application. Following are the fields related to this operation.
+**Create Endpoint** operation can be used to programmatically add a new endpoint to a platform application. Following
+are the fields related to this operation.
 
 Field              | Required            | Supports Variables  | Description
 ---                | :---:               | :---:               | ---
-Token              | :white_check_mark:  | :white_check_mark:  | Unique identifier created by the notification service for an app on a device. The specific name for Token will vary, depending on which notification service is being used. For example, when using APNS as the notification service, you need the device token. Alternatively, when using GCM or ADM, the device token equivalent is called the registration ID.
+Token              | :white_check_mark:  | :white_check_mark:  | Unique identifier created by the notification service for an app on a device. The specific name for Token will vary, depending on which notification service is being used. ADM, the device token equivalent is called the registration ID.
 Custom User Data   | :x:                 | :white_check_mark:  | Arbitrary user data to associate with the endpoint, which must be in UTF-8 format and less than 2KB
 Endpoint Attributes | :x:                 | :white_check_mark:  | A set of key-value pairs that should be set as endpoint attributes
 
 #### Delete Endpoint
 
-**Delete Endpoint** operation can be used to programmatically remove an existing endpoint from a platform application. Following are the fields related to this operation.
+**Delete Endpoint** operation can be used to programmatically remove an existing endpoint from a platform application.
+Following are the fields related to this operation.
 
 Field              | Required            | Supports Variables  | Description
 ---                | :---:               | :---:               | ---
