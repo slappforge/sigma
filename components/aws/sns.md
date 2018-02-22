@@ -110,6 +110,10 @@ SMS                   | A valid phone number | `+94123123123`
 
 Once the subscription protocol and endpoint are defined, click the + button to add the subscription.
 
+### Trigger Parameters
+
+*SNS triggers do not have any trigger specific parameters.*
+
 ---
 
 ## SNS for Operations
@@ -190,9 +194,9 @@ Subscription ID | :white_check_mark:  | :white_check_mark:   | The ID of the sub
 
 ---
 
-### SNS Direct SMS
+### SNS Direct SMS resource
 
-SNS Direct SMS feature can be used to send text messages directly to a phone number via SNS, without having to subscribe to a topic.  Following are the fields related to this operation.
+SNS Direct SMS resource can be used to send text messages directly to a phone number via SNS, without having to subscribe to a topic.  Following are the fields related to this operation.
 
 Field           | Required            | Supports Variables   | Description
 ---             | :---:               | :---:                | ---
@@ -200,3 +204,50 @@ Mobile Number | :white_check_mark:  | :x:   | The mobile number to send the text
 Message | :white_check_mark:  | :white_check_mark:   | The message to be sent. If the message is longer than 160 characters, it will be treated as multiple text messages.
 Message Type | :white_check_mark:  | :x:   | The type of the message, which can be either `Promotional` or `Transactional`. `Promotional` type can be used for non-critical messages, such as marketing messages, where SNS optimizes the message delivery to incur the lowest cost. `Transactional` type can be used for critical messages that support customer transactions, such as one-time passcodes for multi-factor authentication, where SNS optimizes the message delivery to achieve the highest reliability.
 Sender ID | :x:  | :white_check_mark:   | The sender ID to be displayed as the message sender on the receiving device. This can contain up to 11 alphanumeric characters, including at least one letter and no spaces.
+
+---
+
+### SNS Platform Application resource
+
+SNS Platform Application resource can be used to send notification messages to mobile apps and devices. Currently Sigma only supports operations on existing Platform Applications.
+
+When **Platform Application** is selected as the resource type, first an existing platform application should be selected from the **Application** drop-down for the operations.
+
+<p align="center">
+  <img width="400" src="./images/sns/existing_app.png">
+</p>
+
+Once the application is selected, an operation to be injected can be selected from the **Operation** drop-down. Currently Sigma supports the following operations on SNS Platform Applications.
+
+- Publish Message
+- Create Endpoint
+- Delete Endpoint
+
+#### Publish Message
+
+**Publish Message** operation can be used to programmatically publish a message to a platform application endpoint. Following are the fields related to this operation.
+
+Field              | Required            | Supports Variables  | Description
+---                | :---:               | :---:               | ---
+Endpoint ID        | :white_check_mark:  | :white_check_mark:  | ID of the endpoint to which the message should be sent
+Subject            | :x:                 | :white_check_mark:  | Subject of the message
+Message            | :white_check_mark:  | :white_check_mark:  | Content of the message
+Message Attributes | :x:                 | :white_check_mark:  | A set of key-value pairs that should be set as message attributes. The type of the value can be `String`, `String Array`, `Number` or `Binary`.
+
+#### Create Endpoint
+
+**Create Endpoint** operation can be used to programmatically add a new endpoint to a platform application. Following are the fields related to this operation.
+
+Field              | Required            | Supports Variables  | Description
+---                | :---:               | :---:               | ---
+Token              | :white_check_mark:  | :white_check_mark:  | Unique identifier created by the notification service for an app on a device. The specific name for Token will vary, depending on which notification service is being used. For example, when using APNS as the notification service, you need the device token. Alternatively, when using GCM or ADM, the device token equivalent is called the registration ID.
+Custom User Data   | :x:                 | :white_check_mark:  | Arbitrary user data to associate with the endpoint, which must be in UTF-8 format and less than 2KB
+Endpoint Attributes | :x:                 | :white_check_mark:  | A set of key-value pairs that should be set as endpoint attributes
+
+#### Delete Endpoint
+
+**Delete Endpoint** operation can be used to programmatically remove an existing endpoint from a platform application. Following are the fields related to this operation.
+
+Field              | Required            | Supports Variables  | Description
+---                | :---:               | :---:               | ---
+Endpoint ID        | :white_check_mark:  | :white_check_mark:  | ID of the endpoint to be deleted
