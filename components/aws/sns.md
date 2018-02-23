@@ -14,7 +14,7 @@ The Sigma IDE currently supports the following 3 types of SNS resources.
 
 A SNS topic can be used as a trigger for a lambda function within Sigma. For that, a SNS resource should be dragged from
 the resources panel and dropped on top of the `event` parameter of the lambda handler. Then the SNS topic configuration
-panel can be used to [set an SNS topic](#set-topic)  as the trigger.
+panel can be used to [set a SNS topic](#set-topic) as the trigger.
 
 When a SNS topic is configured as a trigger to a Lambda function, that function is invoked each time a message is
 published to the topic. The structure of trigger event received by Lambda function is of the following format.
@@ -61,6 +61,9 @@ published to the topic. The structure of trigger event received by Lambda functi
 }
 ````
 
+### Trigger Parameters
+
+*SNS triggers do not have any trigger specific parameters.*
 
 ### <a name="set-topic">Setting the SNS topic
 
@@ -123,10 +126,6 @@ Lambda                | ARN of a Lambda function | `arn:aws:lambda:us-east-1:111
 SMS                   | A valid phone number | `+94123123123`
 
 Once the subscription protocol and endpoint are defined, click the + button to add the subscription.
-
-### Trigger Parameters
-
-*SNS triggers do not have any trigger specific parameters.*
 
 ---
 
