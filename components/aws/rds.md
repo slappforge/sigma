@@ -68,3 +68,36 @@ DB Engine Version   | :white_check_mark:| Version number of the database engine 
 DB Instance Class   | :white_check_mark:| A list of DB instance classes. Choose the DB instance class that allocates the computational, network, and memory capacity required by planned workload of this DB instance.
 
 ##### Common Configurations
+
+Here all the configuration are common to any instance type.
+<p align="center">
+<img width="400" src="./images/rds/rds_common_configuration.png">
+</p>
+
+Field               | Required          | Description
+---                 | :---:             | :---:   
+DB Instance Identifier           | :white_check_mark:| Unique identifier for the instance
+Master Username       | :white_check_mark:| Username of the database
+Master Password  | :white_check_mark:| Password for the database
+Database Port  | :x:| The port of the database. If this is not provided, 3306 will be used as the default port.
+
+### Configure RDS Operations
+
+Once user configure or select the instance resource for the operation, user can configure the required operation to be invoked
+on that database. Sigma IDE supports two operations Begin Transaction and Query. As the first step, user should select the required operation from the operation drop down list of the configuration window.
+
+#### Query Operation
+
+This operation can be used to execute any query based on your selected instance engine type.
+
+For this operation following parameters should be provided.
+
+
+Field         | Required          | Description
+---           | :---:             | :---:   
+Query     | :white_check_mark:| Query to be executed on the database
+Inserts  | :x:         | Values which will be passed into the prepared statement during the execution time. Values should be passed as an array.
+
+#### Begin Transaction Operation
+
+This operation can be used to enable transactional support.
