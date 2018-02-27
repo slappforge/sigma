@@ -49,7 +49,7 @@ with the Engine Type. The other category is the general configurations which are
 </p>
 
 Field               | Required          | Description
----                 | :---:             | :---:   
+---                 | :---:             | ---   
 DB Engine           | :white_check_mark:| A list of supported Engine Types. In the case of Aurora the value Aurora should be selected.
 Edition             | :white_check_mark:| A list of available editions for the Engine Type selected above. As of now Sigma only supports MySQL edition. The other option PostgreSQL will be supported in the near future.
 DB Instance Class   | :white_check_mark:| A list of DB instance classes. Choose the DB instance class that allocates the computational, network, and memory capacity required by planned workload of this DB instance.
@@ -61,7 +61,7 @@ DB Instance Class   | :white_check_mark:| A list of DB instance classes. Choose 
 </p>
 
 Field               | Required          | Description
----                 | :---:             | :---:   
+---                 | :---:             | ---   
 DB Engine           | :white_check_mark:| A list of supported Engine Types. In the case of MySQL the value MySQL should be selected.
 License Model       | :white_check_mark:| License type associated with the database engine.
 DB Engine Version   | :white_check_mark:| Version number of the database engine to be used for this instance.
@@ -74,12 +74,14 @@ Here all the configuration are common to any instance type.
 <img width="400" src="./images/rds/rds_common_configuration.png">
 </p>
 
-Field               | Required          | Description
----                 | :---:             | :---:   
-DB Instance Identifier           | :white_check_mark:| Unique identifier for the instance
-Master Username       | :white_check_mark:| Username of the database
-Master Password  | :white_check_mark:| Password for the database
-Database Port  | :x:| The port of the database. If this is not provided, 3306 will be used as the default port.
+Field                   | Required          | Description
+---                     | :---:             | ---   
+DB Instance Identifier  | :white_check_mark:| A name that is unique for all DB instances owned by your AWS account in the current region. DB instance identifier is case insensitive, but stored as all lower-case, as in "mydbinstance".
+Master Username         | :white_check_mark:| An alphanumeric string that defines the login ID for the master user. You use the master user login to start defining all users, objects, and permissions in the databases of your DB instance. Master Username must start with a letter, as in "awsuser".
+Master Password         | :white_check_mark:| A string that defines the password for the master user. Master Password must be at least eight characters long, as in "mypassword".
+Database Name           | :white_check_mark:| The name of the database.
+Database Port           | :white_check_mark:| TCP/IP port the DB instance will use for applications connections.
+DB Initialization Query | :x:               | DDL which needs to be run at the Initialization.
 
 ### Configure RDS Operations
 
@@ -94,7 +96,7 @@ For this operation following parameters should be provided.
 
 
 Field         | Required          | Description
----           | :---:             | :---:   
+---           | :---:             | ---   
 Query     | :white_check_mark:| Query to be executed on the database
 Inserts  | :x:         | Values which will be passed into the prepared statement during the execution time. Values should be passed as an array.
 
