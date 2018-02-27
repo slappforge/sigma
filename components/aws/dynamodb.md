@@ -62,7 +62,9 @@ This operation can be used to either create a new item, or to update an existing
 
 ![DynamoDB Put fields](images/dynamodb/ddb_pu_kv.jpg)
 
-You may specify a list of attribute:value pairs where, attribute is the name of the field and value is the intended value for that field.
+|Field|Required|Description|
+|---|---|---|
+|Values|:white_check_mark:|A list of attribute:value pairs where, attribute is the name of the field and value is the intended value for that field.|
 
 #### Delete Document Operation
 
