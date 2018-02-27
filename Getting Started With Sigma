@@ -1,0 +1,24 @@
+# Getting Started with Sigma IDE
+
+Sigma IDE enables you to develop Serverless applications simply by dragging and
+dropping components on to the pane. The editor provides the best of both worlds
+by allowing a user to edit the code using Sigma's rich text editor and also
+the ease of drag and drop elements.
+
+To start development, a user needs valid AWS credentials and a Github account.
+As the first step a user will need to create an account with Sigma. Upon login,
+the user will be requested to provide his/her AWS credentials. You will then
+need to provide your Github credentials to login.
+
+The user will be shown the following view upon login.
+# ![Initial Editor View](images/guide/sigma_editor_start_view.JPG)
+
+The resources pane shown in the below image, depicts the available resource
+types in the IDE.
+
+# ![](images/guide/aws_resources_view.JPG)
+
+To add an element on to the pane, just drag and drop a component on to the
+editor pane.
+
+For
