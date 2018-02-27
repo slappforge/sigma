@@ -9,7 +9,7 @@ As serverless functions are event-driven by nature, unless you define one or mor
 it would simply sit idle, and will only respond to direct invocations
 (e.g. [`Invoke` API calls in case of AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html)).
 
-# Design
+## Design
 
 In Sigma, a trigger is always associated with a [resource](resources.md).
 The same resource may be associated with multiple triggers
@@ -21,11 +21,11 @@ Usually you do not have to worry too much about such particulars,
 as Sigma is designed to automatically handle resources and their interdependencies,
 but they may be useful when you are trying to troubleshoot any misconfigurations or deployment errors.
 
-# Supported triggers
+## Supported triggers
 
 Sigma currently supports the following types of triggers:
 
-## AWS
+### AWS
 
 - [API Gateway](../components/aws/apig.md)
 - [CloudWatch Events](../components/aws/cloudwatch.md)
@@ -33,12 +33,20 @@ Sigma currently supports the following types of triggers:
 - [Kinesis Streams](../components/aws/kinesis.md)
 - [SNS Topics](../components/aws/sns.md#sns-as-a-trigger)
 
-# Managing triggers in Sigma
+## Managing triggers in Sigma
 
-## <a name="define-trigger"> Defining a trigger
+### <a name="define-trigger"> Defining a trigger
 
 You can configure a trigger for a serverless function by dragging an event source ("base" resource)
 from the **Resources** pane on the left, on to the `event` variable on the function header.
+Resource types that can provide trigger functionality will be marked with a lightning bolt symbol
+(or a composite symbol that contains a lightning bolt) on the bottom right corner of their icon.
+
+<p align="center">
+  <img src="./images/symbol-trigger-only.png" alt="A resource type offering exclusive trigger functionality">
+  <img src="./images/symbol-trigger-operation.png" alt="A resource type that can provide both trigger and operation functionality">
+</p>
+
 As soon as you perform the drag-and-drop, Sigma will open a trigger configuration pop-up
 so that you can provide any custom parameters that are required by your trigger.
 
@@ -54,7 +62,7 @@ Once a new resource is defined in this manner (as part of a trigger declaration)
 it will become available in the left pane and can be used for other triggers and code-level [operations](operations.md)
 (API invocations), just like any other resource definition.
 
-## <a name="edit-trigger"> Editing a trigger
+### <a name="edit-trigger"> Editing a trigger
 
 After a trigger has been inserted, in addition to modifying the source entity via a [resource edit](resources.md#edit),
 you can also modify trigger-specific parameters via the **trigger edit** feature.
@@ -91,7 +99,7 @@ Usually you will not be able to edit the resource-specific parameters (e.g. shar
 single-point edits are not allowed for reusable resources (although they can be [globally edited](resources.md#edit)),
 since they may be shared across different triggers and operations across multiple lambdas.
 
-## <a name="delete-trigger"> Deleting a trigger
+### <a name="delete-trigger"> Deleting a trigger
 
 If you no longer require a particular event source to invoke your serverless function,
 simply deleting the corresponding trigger will remove the event source association from the next deployment onwards.
