@@ -1,11 +1,26 @@
 # Resources
 
-In Sigma IDE, a **Resource** represents an instance of a component type, such as a S3 bucket, an API Gateway endpoint, etc. Also a resource can represent an already existing
-component or a newly defined one.
+In Sigma IDE, a Sigma Project is an aggregation of resources, where a **Resource** represents an actual entity on the connected AWS account, such as a S3 bucket, an API Gateway endpoint, etc. From the project's point of view, a resource can be either a **New Resource** or an **Existing Resource**.
+
+## New resources vs. Existing Resources
+
+In the context of a Sigma project, a resources is considered as **New** if it is/was created by the current project itself. On the other hand, ) or a resources is considered as **Existing** if it has been created by an external entity; e.g. the user himself, a different Sigma project, or an entirely unrelated third-party application.
+
+This distinction follows from the fact that a Sigma project maintains its resources via an **AWS CloudFormation** stack, which is inherently limited to managing resources that were created by itself. Hence a Sigma project has full control over **New** resources (those that were created by, and hence belong to, the project's stack) but only partial control over **Existing** resources (limited to configuring them as trigger points, and allowing programmatic access to them via the user's application).
+
+In almost all component configuration panels in Sigma, there are 2 separate tabs to define either a new resource of that component type or to use an existing one. When a new resource is defined (e.g. a new S3 bucket), from next time onwards it will also be listed under existing resources list (e.g. existing buckets list), but will be marked as **(New)**.
+
+## Using Resources as Triggers and Operations
+
+Usage of resources in a Sigma project also falls into two categories: **Triggers** and **Operations**. **Triggers**, as the name implies, correspond to the use of a resource for triggering a user's lambda function. **Operations** represent the usage of a resource inside the lambda function logic (such as an AWS API call).
+
+A lambda can have any number of triggers and can access/operate on any number of resources (as operations). One resource may be associated with multiple triggers and also be involved in multiple operations.
+
+> For example, if you write a function for processing files dropped into a S3 bucket, you will usually set up an S3 trigger for the bucket, and perform `getObject` (and probably `putObject`) operations on the bucket from within the function code. In this case, the same bucket resource serves as a trigger as well as a resource.
 
 Depending on the type of the resource, it can be used either as a trigger, or for operations or for both. Following is a list of currently available resource types and their possible usages.
 
-## AWS Resources
+### AWS Resources
 
 | Resource Type | Use as a Trigger    | Use for Operations
 | ---           | :---:               | :---:
