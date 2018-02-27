@@ -11,7 +11,9 @@ the user will be requested to provide his/her AWS credentials. You will then
 need to provide your Github credentials to login.
 
 The user will be shown the following view upon login.
-# ![Initial Editor View](images/guide/sigma_editor_start_view.JPG)
+<p align="center">
+  <img width="600" src="./images/guide/sigma_editor_start_view.JPG">
+</p>
 
 Sigma IDE makes lambda function development easier by centralizing resource/ trigger
 configurations and the application logic. Rather than navigating through AWS services
@@ -21,7 +23,9 @@ components required.
 The resources pane shown in the below image, depicts the available resource
 types/ trigger types in the IDE.
 
-# ![](images/guide/aws_resources_view.JPG)
+<p align="center">
+  <img height="500" src="./images/guide/aws_resources_view.png">
+</p>
 
 To add an element on to the pane, just drag and drop a component on to the
 editor pane.
@@ -39,7 +43,9 @@ This would log the event trigger, on cloudwatch logs.
 
 The function would appear as follows.
 
-# ![](images/guide/function_developed.JPG)
+<p align="center">
+  <img width="600" src="./images/guide/function_developed.JPG">
+</p>
 
 Please refer to our samples, if you would like to deploy a Serverless application
 easily.
