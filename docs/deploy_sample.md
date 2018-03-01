@@ -27,11 +27,11 @@ Once you successfully login with GitHub, you will see all the features available
 
 ![GitHub integration](images/sample/quickstart.JPG)
 
-* Your Projects\
+* Your Projects</br>
 This section lists all Sigma projects which are available in your GitHub account
-* Samples\
+* Samples</br>
 This section lists all Sigma projects which are available in the [SLAppForge GitHub account](https://github.com/slappforge)
-* Public Repositories\
+* Public Repositories</br>
 This section provides you the ability to directly open any Sigma repository by URL
 or to search all Sigma projects in a GitHub account by providing a GitHub username
 
