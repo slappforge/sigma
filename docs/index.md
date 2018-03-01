@@ -26,4 +26,6 @@ components required.
 - [getting started](getting_started.md)
 - [your first project!](first_project.md)
 - [deploying a sample project](deploy_sample.md)
+- [Sigma concepts](concepts/index.md)
+- [available components](components/index.md)
 - [frequently asked questions](faq.md)
