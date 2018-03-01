@@ -32,7 +32,7 @@ We provide your own editor area to write your own code to get your use case a li
 
 You can access AWS Components provided for Sigma IDE from the Resources tab as shown in Fig 5.
 
-![Figure 5: AWS Components in Sigma IDE](images/Sigma_intro1.png)
+![Figure 5: AWS Components in Sigma IDE](images/sigma_intro1.png)
 
 You can drag and drop the AWS Components to the editor listed under resources appropriately.
 
