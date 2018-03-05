@@ -1,0 +1,11 @@
+{
+    "title": "SLAppForge Sigma",
+    "structure": {
+        "readme": "index.md"
+    },
+    "plugins": [
+        "advanced-emoji",
+        "-sharing"
+    ],
+    "author": "SLAppForge Lanka (Private) Limited"
+}
