@@ -13,3 +13,4 @@ on Amazon Web Services (AWS).
 - [AWS S3](s3.md)
 - [AWS SNS](sns.md)
 - [AWS SQS](sqs.md)
+- [AWS SES](ses.md)
