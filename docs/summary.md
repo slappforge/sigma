@@ -16,6 +16,7 @@
     	* [AWS Kinesis](components/aws/kinesis.md)
     	* [AWS RDS](components/aws/rds.md)
     	* [AWS S3](components/aws/s3.md)
+    	* [AWS SES](components/aws/ses.md)
     	* [AWS SNS](components/aws/sns.md)
     	* [AWS SQS](components/aws/sqs.md)
     * [For Azure projects (coming soon!)](components/azure/index.md))
