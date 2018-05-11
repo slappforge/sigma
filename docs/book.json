@@ -5,7 +5,37 @@
     },
     "plugins": [
         "advanced-emoji",
-        "-sharing"
+        "-sharing",
+        "navbar@git+https://github.com/JChamz/gitbook-plugin-navbar.git#0.1.0"
     ],
+    "pluginsConfig": {
+        "navbar": {
+            "logo": {
+                "link": "http://slappforge.com/",
+                "image": "https://slappforge.com/wp-content/uploads/2018/03/logo-01.png",
+                "alt": "SLAppForge"
+            },
+            "menu": {
+                "items": [{
+                    "text": "Home",
+                    "link": "http://slappforge.com"
+                }, {
+                    "text": "Sigma",
+                    "link": "http://slappforge.com/sigma/"
+                }, {
+                    "text": "Contact",
+                    "link": "http://slappforge.com/contact/"
+                }, {
+                    "text": "Sigma IDE",
+                    "link": "https://sigma.slappforge.com"
+                }]
+            },
+            "style": {
+                "backgroundColor": "white",
+                "linkColor": "black",
+                "linkHoverColor": "blue"
+            }
+        }
+    },
     "author": "SLAppForge Lanka (Private) Limited"
 }

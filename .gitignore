@@ -1,0 +1,10 @@
+# Dependency directory
+docs/node_modules
+
+# Book build output
+docs/_book
+
+# eBook build output
+*.epub
+*.mobi
+*.pdf
