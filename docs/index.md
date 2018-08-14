@@ -28,4 +28,5 @@ components required.
 - [deploying a sample project](deploy_sample.md)
 - [Sigma concepts](concepts/index.md)
 - [available components](components/index.md)
+- [features](features/index.md)
 - [frequently asked questions](faq.md)
