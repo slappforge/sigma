@@ -102,7 +102,7 @@ This will load 15 more older logs to sigma trail.
 
 This button will take you back to the 15 latest logs only mode.
 
-## Controlling Sigma Log fetching behaviour
+## Controlling Sigma's Log fetching behaviour
 
 By default Sigma continuously polls for new logs from cloudwatch. If you wish to control this behaviour, you may use following set of buttons.
 
