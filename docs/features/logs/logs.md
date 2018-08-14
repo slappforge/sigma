@@ -72,7 +72,7 @@ Sigma trail header has following controls to fine tune your logs view.
  
 #### 5. Search logs
  
-You can filter Sigma trails by using [cloudwatch filter pattern and syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/FilterAndPatternSyntax.html).
+You can filter Sigma trails by using [Cloudwatch filter pattern and syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/FilterAndPatternSyntax.html).
 
 This will give you an effect similar to tailing with grep.
 
@@ -104,7 +104,7 @@ This button will take you back to the 15 latest logs only mode.
 
 ## Controlling Sigma's Log fetching behaviour
 
-By default Sigma continuously polls for new logs from cloudwatch. If you wish to control this behaviour, you may use following set of buttons.
+By default Sigma continuously polls for new logs from Cloudwatch. If you wish to control this behaviour, you may use following set of buttons.
 
 # ![](images/new_logs_buttons.png)
 
@@ -116,7 +116,7 @@ In non Real-time mode, use this button to request for newer log requests.
 
 ## Additional Notes
 
-Sigma is using Cloudwatch to generate the Sigma trail. Even though Test logs will appear immediately after execution, Production logs will take **up to 30 seconds** to appear in the Sigma Trail, due to the delay at cloudwatch.
+Sigma is using Cloudwatch to generate the Sigma trail. Even though Test logs will appear immediately after execution, Production logs will take **up to 30 seconds** to appear in the Sigma Trail, due to the delay at Cloudwatch.
 
 
 
