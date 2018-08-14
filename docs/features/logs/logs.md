@@ -86,6 +86,34 @@ If you want to make more room for your code, you may resize sigma trail by holdi
 
 # ![](images/trail_resize.gif)
 
+## Navigating over Old Log requests
+
+Sigma by default shows you only the latest 15 log requests.
+
+To view older logs, you may use following controllers.
+
+# ![](images/older_logs_buttons.png)
+
+#### View Older Logs
+
+This will load 15 more older logs to sigma trail. 
+
+#### Hide Older Logs
+
+This button will take you back to the 15 latest logs only mode.
+
+## Controlling Sigma Log fetching behaviour
+
+By default Sigma continuously polls for new logs from cloudwatch. If you wish to control this behaviour, you may use following set of buttons.
+
+# ![](images/new_logs_buttons.png)
+
+#### Tune On/Off Real-time logs
+Turning of Real-time logs will stop Sigma from automatically polling for new logs.
+
+#### View Older Logs
+In non Real-time mode, use this button to request for newer log requests.
+
 
 
 
