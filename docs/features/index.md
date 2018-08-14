@@ -4,4 +4,5 @@ This section presents some insight into the features you will come across when u
 
 ## Where to go from here
 
-- [application logs](logs/logs.md)
+- [Sigma Trail](logs/logs.md)
+- [testing your function](test/test.md)

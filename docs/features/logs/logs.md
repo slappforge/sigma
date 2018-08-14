@@ -1,6 +1,6 @@
-# Application Logs
+# Sigma Trail
 
-In sigma, we have categorized logs into two types.
+Sigma Trail is the component where you can view your application logs. In sigma, we have categorized logs into two types.
 
 #### 1. Test Logs [TEST]
 
