@@ -114,6 +114,10 @@ Turning of Real-time logs will stop Sigma from automatically polling for new log
 #### View Older Logs
 In non Real-time mode, use this button to request for newer log requests.
 
+## Additional Notes
+
+Sigma is using Cloudwatch to generate the Sigma trail. Even though Test logs will appear immediately after execution, Production logs will take **up to 30 seconds** to appear in the Sigma Trail, due to the delay at cloudwatch.
+
 
 
 
