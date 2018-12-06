@@ -9,13 +9,13 @@ You can select and open a sample project from the Project View of the IDE. There
 
 1. At startup, after successfully logging in.
 
-![Startup Project View](images/sample/pview.JPG)
+   ![Startup Project View](images/sample/pview.JPG)
 
 2. From the editor toolbar.
 
-![Toolbar](images/sample/toolbar.JPG)
+   ![Toolbar](images/sample/toolbar.JPG)
 
-![Project View in Editor](images/sample/project_view.gif)
+   ![Project View in Editor](images/sample/project_view.gif)
 
 ## Activating GitHub Integration
 
