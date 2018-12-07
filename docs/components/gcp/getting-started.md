@@ -5,9 +5,12 @@
 
 * a [**Google Cloud Platform subscription**](https://cloud.google.com/getting-started/);
 if you already have a Google account, you can directly [sign up](https://console.cloud.google.com/freetrial).
-* a [**GitHub account**](https://github.com/); free to sign up if you don't have one already
+* a [**GitHub**](https://github.com/) or [**BitBucket**](https://bitbucket.org/) account;
+free to sign up if you don't have one already
 * a fairly new web browser; Sigma has been tested on **Google Chrome 59+**, **Mozilla Firefox 58+**,
 **Microsoft Edge 41+** and **Apple Safari 10.1.2+**
+
+**NOTE:** Sigma will soon introduce support for [AWS CodeCommit](https://aws.amazon.com/codecommit/) repositories as well!
 
 
 ## Create a service account key.
@@ -96,9 +99,11 @@ you would need to enable the following APIs on your GCP project (which are not e
 you will need to explicitly enable them as well - *regardless of the deployment platform*.
 
 
-# Sign up for Sigma.
+## Sign up for Sigma.
 
 Create new Sigma account (if you haven't already):
+
+**NOTE**: You can avoid most of these steps if you sign in via a social media account (Facebook or Google).
 
 1. Go to the [Sigma sign-in page](https://sigma.slappforge.com/#/signin).
 
@@ -139,7 +144,7 @@ Now you can log in using your username (that you took note previously, during si
    ![Sigma sign up: confirmation successful](../../images/signup/07-sigma-sign-up-confirmation-successful.png)
 
 
-# Grant GCP access to Sigma.
+## Grant GCP access to Sigma.
 
 1. After sign-in, you'll be in the **Cloud Credentials** page of Sigma.
 
@@ -169,7 +174,8 @@ if you wish to also deploy on, or develop against, AWS.
 
    ![AWS Credentials tab with a key-pair configured](../../images/cloud-credentials/06-aws-credentials-tab-with-key-pair.png)
 
-6. Sigma can save your GCP (and AWS) credentials in its [secure AWS Cognito data store](https://aws.amazon.com/cognito/faqs/#signup).
+6. Sigma can save your GCP (and AWS) credentials in its
+[secure AWS Cognito data store](https://docs.aws.amazon.com/cognito/latest/developerguide/synchronizing-data.html).
 This is solely for your convenience; the content will be encrypted with your own password - also managed by Cognito -
 or a PIN of your choice, in case you used a social media log-in.
 
@@ -181,3 +187,55 @@ or a PIN of your choice, in case you used a social media log-in.
    ![Credentials: **Save to Secure Storage** option](../../images/cloud-credentials/07-save-credentials-to-secure-storage-option.png)
 
 7. Click **Load Editor**.
+
+
+## Connect GitHub.
+
+**NOTE:** You can integrate your **BitBucket account** in pretty much the same way.
+
+1. Now you will be in the [projects page](https://sigma.slappforge.com/#/project),
+with a quickstart pane (displaying several **Source Provider Integration options**) on the left.
+
+   ![Sigma Projects page with GitHub integration message](../../images/projects-page/01-projects-page-source-provider-integration.png)
+
+2. Click the **Integrate with GitHub** button. A GitHub authorization window will pop up
+(if it does not, tune your browser to enable pop-ups for `sigma.slappforge.com` and try again).
+
+3. On the pop-up, sign in to GitHub if you are not already signed in.
+
+4. The pop-up will ask you to authorize the **Sigma** GitHub app (made by `slappforge`, the author of Sigma)
+to connect with your GitHub account. Click the **Authorize slappforge** button to continue.
+
+   ![Sigma GitHub integration pop-up](../../images/projects-page/02-slappforge-sigma-github-integration.png)
+
+
+## Launch a project!
+
+1. Once GitHub authorization is complete, the pop-up will close,
+and the quickstart pane will start displaying the **already available Sigma projects**:
+
+   * **Your Projects** tab will display any Sigma-compatible projects that are already in your GitHub account.
+
+     ![Your existing Sigma projects](../../images/projects-page/03-your-projects.png)
+
+   * **Sample Projects** tab will display several sample projects published by [SLAppForge](https://github.com/slappforge/),
+     which you can try out right away.
+
+     ![Sigma sample projects](../../images/projects-page/04-sample-projects.png)
+
+2. If you have the GitHub URL or username of any other Sigma project that you know of,
+you can simply paste it in the search bar of the **Public Search** tab and hit the search button, to load it.
+
+   ![Search for public repositories by URL or username](../../images/projects-page/05-search-projects-by-url-or-username.png)
+
+3. Once you have found the desired project, click on it to load it into the Sigma editor.
+
+Alternatively you can **create a new project** by filling the **Create a New Project** form on the right side pane:
+
+1. Under **Project Name**, enter a title for your project.
+2. If you like, add a short description under **Project Description**, which will be displayed in GitHub etc.
+3. Select a **Base Platform** for your project (in this case it would be **GCP**);
+this is the serverless platform on which your project will be deployed.
+4. Enter a version number of the format `x.y.z`
+(compatible with [NPM versioning](https://docs.npmjs.com/about-semantic-versioning)) under **Project Version**.
+5. When done, click **Create Project**.

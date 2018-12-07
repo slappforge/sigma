@@ -4,6 +4,6 @@ This section outlines the basic serverless components that you can use within yo
 
 ## Where to go from here
 
-- [components for AWS projects](aws)
-- [components for Azure projects (coming soon!)](azure)
-- [components for GCP projects (coming soon!)](gcp)
+- [components for AWS projects](aws/)
+- [components for Azure projects (coming soon!)](azure/)
+- [components for GCP projects](gcp/)

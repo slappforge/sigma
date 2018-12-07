@@ -37,6 +37,35 @@ The JSON file typically takes the format:
 }
 ```
 
+You can follow one of the approaches described under the [**Authorization** page](authorization.md)
+in order to provide the service account credentials (key) to Sigma.
+
+After authorization, you would be able to access the list of natively supported GCP services,
+under the **GCP Resources** child tab of the **Resources** pane.
+
+
+## Resource modes
+
+### Triggers and Operations
+
+If your project has GCP set as the **Base Platform** (i.e. the project is configured to be deployed on GCP),
+you can use certain GCP services (*Cloud Storage*, *Cloud Pub/Sub* etc.) as *event sources*
+to [trigger](../../concepts/triggers.md) your Cloud Functions.
+
+Regardless of the platform, you can perform [operations](../../concepts/operations.md)
+against GCP services and entities from within any project, even a non-GCP (e.g. AWS) one.
+
+### New vs existing resources
+ 
+In GCP-based projects, you can define [*new resources*](../../concepts/resources.md#new-resources-vs.-existing-resources)
+(topics, buckets etc.) under supported GCP services.
+These will be bound to your Sigma project, and managed (created, updated and deleted)
+along with the project's overall deployment, inside the designated GCP project.
+
+Alternatively, in all (GCP as well as non-GCP) projects, you can integrate with *already existing* GCP entities
+that are already available in your GCP project.
+These will not be added to the deployment configurations of your Sigma project, so would need to be managed externally.
+
 
 ## Where to go from here
 
