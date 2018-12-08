@@ -70,3 +70,6 @@ These will not be added to the deployment configurations of your Sigma project, 
 ## Where to go from here
 
 * [Getting Started with Sigma IDE on Google Cloud Platform](./getting-started.md)
+* [HTTP Triggers](http-trigger.md)
+* [Cloud Storage](cloud-storage.md)
+* [Cloud Pub/Sub](cloud-pub-sub.md)
