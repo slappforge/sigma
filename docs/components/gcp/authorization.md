@@ -12,7 +12,7 @@ This can be under one of two scenarios:
 
 ### You are new to Sigma (or have just created an account)
 
-Please refer [**Grant GCP access to Sigma**](getting-started.md#grant-gcp-access-to-sigma.) section under our
+Please refer [**Grant GCP access to Sigma**](getting-started.md#grant-gcp-access-to-sigma) section under our
 [**GCP getting-started guide**](getting-started.md).
 
 
@@ -68,7 +68,7 @@ Provide the password/PIN, based on how you logged in - using a username or via s
    ![Cloud Credentials pane with encryption PIN request prompt](images/sigma-auth-via-cloud-credentials-settings/03-cloud-credentials-tab-encryption-key-prompt.png)
 
 3. Now follow the instructions as described under
-[**Grant GCP access to Sigma** section of the getting-started guide](getting-started.md#grant-gcp-access-to-sigma.)
+[**Grant GCP access to Sigma** section of the getting-started guide](getting-started.md#grant-gcp-access-to-sigma)
 to provide GCP (and optionally AWS) credentials, and choose to persist (or not persist) them.
 
    ![Cloud Credentials tab with GCP credentials populated](images/sigma-auth-via-cloud-credentials-settings/04-cloud-credentials-tab-with-gcp-credentials.png)

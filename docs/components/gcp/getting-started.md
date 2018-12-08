@@ -95,7 +95,7 @@ you would need to enable the following APIs on your GCP project (which are not e
 
 * It may take 2-3 minutes for an API to get enabled.
 * If you wish to use any other APIs that are not listed in the
-[default enabled APIs list](),
+[default enabled APIs list](https://cloud.google.com/service-usage/docs/enabled-service),
 you will need to explicitly enable them as well - *regardless of the deployment platform*.
 
 
