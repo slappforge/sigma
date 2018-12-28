@@ -46,15 +46,25 @@ and re-processes the message (ether re-publishes or re-queues it, depending on t
 until a successful acknowledgement is received; these retries may last up to 7 days.
 
 **NOTE:**: Due to this auto-retry mechanism, be careful when consuming messages - especially with push-based scenarios,
-where the assigned webhook or [cloud function trigger](#cloud-pub-sub-as-a-trigger) will continue to get invoked repeatedly
+where the assigned webhook or [cloud function trigger](#cloud-pubsub-as-a-trigger) will continue to get invoked repeatedly
 if your application logic does not acknowledge the message properly (or continues to fail, in case of a cloud function).
 
 * For *push-based* subscriptions, simply
 [returning a `200`, `201`, `202`, `204`, or `102` HTTP status response](https://cloud.google.com/pubsub/docs/push#receive_push)
 will acknowledge the push message.
 * For *pull-based* cases the consumer should specifically call the
-[acknowledgement API](#acknowledge-messages-pubsub-projects-subscriptions-acknowledge) with the message ID
+[acknowledgement API](#acknowledge-messages-pubsubprojectssubscriptionsacknowledge) with the message ID
 in order to acknowledge the message.
+
+### General Usage Pattern
+
+Based on the above, usage of Cloud Pub/Sub usually follows this pattern:
+
+* Create a topic.
+* Create one or more subscriptions to the topic.
+* Publish messages to the topic.
+* Individually consume copies of messages via subscriptions.
+* Individually acknowledge messages via subscriptions, marking them as "completed".
 
 
 ## Cloud Pub/Sub as a Trigger

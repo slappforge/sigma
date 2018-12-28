@@ -57,7 +57,7 @@ against GCP services and entities from within any project, even a non-GCP (e.g. 
 
 ### New vs existing resources
  
-In GCP-based projects, you can define [*new resources*](../../concepts/resources.md#new-resources-vs.-existing-resources)
+In GCP-based projects, you can define [*new resources*](../../concepts/resources.md#new-resources-vs-existing-resources)
 (topics, buckets etc.) under supported GCP services.
 These will be bound to your Sigma project, and managed (created, updated and deleted)
 along with the project's overall deployment, inside the designated GCP project.
@@ -73,3 +73,5 @@ These will not be added to the deployment configurations of your Sigma project, 
 * [HTTP Triggers](http-trigger.md)
 * [Cloud Storage](cloud-storage.md)
 * [Cloud Pub/Sub](cloud-pub-sub.md)
+* [Cloud Datastore](cloud-datastore.md)
+* [Cloud SQL](cloud-sql.md)

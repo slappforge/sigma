@@ -29,7 +29,7 @@ for your GCP project.
    ![Cloud Platform dashboard header with project selection drop-down](images/gcp-auth/01-gcp-dashboard-header-with-project-selection-dropdown.png)
 
 4. Open the [GCP Service Accounts page](https://console.cloud.google.com/iam-admin/serviceaccounts).
-You can use the **IAM & admin -> Service accounts** menu item from within any of the dashboard pages.
+You can use the **IAM & admin &rarr; Service accounts** menu item from within any of the dashboard pages.
 
    ![Service Accounts: menu navigation](images/gcp-auth/02-service-accounts-menu-item.png)
 
