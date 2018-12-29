@@ -33,6 +33,13 @@ Sigma currently supports the following types of triggers:
 - [Kinesis Streams](../components/aws/kinesis.md)
 - [SNS Topics](../components/aws/sns.md#sns-as-a-trigger)
 
+### GCP
+
+- [Cloud Storage](../components/gcp/cloud-storage.md)
+- [Cloud Pub/Sub](../components/gcp/cloud-pub-sub.md)
+- [HTTP](../components/gcp/http-trigger.md)
+
+
 ## Managing triggers in Sigma
 
 ### <a name="define-trigger"> Defining a trigger
@@ -96,7 +103,8 @@ from which you can click the desired trigger for editing.
 While options available under the trigger edit mode are very much component-specific,
 in general you would be able to select a different event source entity and modify the trigger-specific parameters.
 Usually you will not be able to edit the resource-specific parameters (e.g. shard count of a Kinesis stream);
-single-point edits are not allowed for reusable resources (although they can be [globally edited](resources.md#edit)),
+single-point edits are not allowed for reusable resources
+(although they can be [globally edited](resources.md#modifying-a-resource)),
 since they may be shared across different triggers and operations across multiple lambdas.
 
 ### <a name="delete-trigger"> Deleting a trigger
