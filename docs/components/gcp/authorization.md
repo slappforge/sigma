@@ -52,7 +52,7 @@ along with the authorized GCP project name at the bottom.
 
 #### Authorizing via the Settings page
 
-**Note:** This is only available in Sigma version 1.2.7 and higher, which may not have been publicly released yet.
+**NOTE:** This is only available in Sigma version 1.2.7 and higher, which may not have been publicly released yet.
 
 This approach provides an option to persist your credentials into Sigma's Amazon Cognito secure storage;
 so you can make a permanent authorization.
