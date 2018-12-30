@@ -1,3 +1,7 @@
+---
+description: Efficiently manage NoSQL document data in your serverless functions, via Google Cloud Datastore and SLAppForge Sigma cloud IDE
+---
+
 # ![Cloud Datastore](images/cloud-datastore/datastore-icon.svg) Google Cloud Datastore
 
 [Google Cloud Datastore](https://cloud.google.com/datastore/) is a managed non-relational (NoSQL) entity storage.

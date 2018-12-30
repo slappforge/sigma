@@ -1,3 +1,7 @@
+---
+description: Find answers to common questions you may face when getting started on serverless development with SLAppForge Sigma cloud IDE
+---
+
 # Frequently asked Questions
 
 :question: What kind of browser should I have to get the optimum use of Sigma?

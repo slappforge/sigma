@@ -1,3 +1,7 @@
+---
+description: You can use these AWS cloud services in your AWS-based Sigma serverless projects; many are usable on non-AWS platforms as well!
+---
+
 # AWS Components
 
 This section outlines the basic serverless components available to your SLAppForge Sigma project

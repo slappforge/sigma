@@ -1,3 +1,7 @@
+---
+description: Develop and deploy your serverless solutions on Google Cloud Platform, with Sigma cloud IDE; or use GCP services on non-GCP projects!
+---
+
 # Google Cloud Platform Components
 
 [Google Cloud Platform (GCP)](https://cloud.google.com/) is a fast-growing array of cloud services,

@@ -1,3 +1,7 @@
+---
+description: Schedule your Lambda serverless functions to trigger periodically or on cloud platform events, with CloudWatch Events in Sigma IDE
+---
+
 # ![](images/cloudwatch/cloudwatch_icon.svg) AWS CloudWatch Events
 
 

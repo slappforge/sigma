@@ -1,3 +1,7 @@
+---
+description: Store, manage and respond to change events on files and objects in Google Cloud Storage, via your serverless functions in Sigma cloud IDE
+---
+
 # ![Cloud Storage logo](images/cloud-storage/storage-icon.svg) Google Cloud Storage
 
 [Google Cloud Storage (GCS)](https://cloud.google.com/storage/)

@@ -1,3 +1,7 @@
+---
+description: Expose configurations and sensitive information to your serverless functions via environment variables on SLAppForge Sigma cloud IDE
+---
+
 # Environment Variables
 
 Since serverless functions ultimately resolve into system-level processes,

@@ -1,3 +1,7 @@
+---
+description: Easily expose your Google Cloud Function on a HTTPS URL with Sigma cloud IDE; invoke with simple HTTP calls from your web or mobile app
+---
+
 # ![HTTP Trigger logo](images/http-trigger/http-trigger-icon.svg) HTTP Cloud Functions and HTTP Triggers
 
 Google Cloud Functions belong to one of two types:

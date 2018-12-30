@@ -1,3 +1,7 @@
+---
+description: Start your serverless journey on Google Cloud Platform with SLAppForge Sigma cloud IDE; grab a key, authorize and open your first project!
+---
+
 # Getting Started with Sigma IDE on Google Cloud Platform
 
 

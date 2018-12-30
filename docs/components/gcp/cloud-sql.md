@@ -1,3 +1,7 @@
+---
+description: Run SQL queries and transactionally manage data in your SLAppForge Sigma serverless functions, with Google Cloud SQL managed DB instances
+---
+
 # ![Cloud SQL](images/cloud-sql/sql-icon.svg) [Google Cloud SQL](https://cloud.google.com/sql/)
 
 Google Cloud SQL is a service that offers fully-managed SQL DBMS instances for use in cloud and non-cloud applications.

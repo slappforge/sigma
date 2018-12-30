@@ -1,3 +1,7 @@
+---
+description: Learn about triggers; cloud event sources that invoke and feed data to serverless functions in your SLAppForge Sigma projects
+---
+
 # Triggers
 
 Triggers are entry points for your serverless function,

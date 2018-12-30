@@ -1,3 +1,7 @@
+---
+description: Quick, illustrated guide to deploying your first serverless project to AWS, with SLAppForge Sigma cloud IDE
+---
+
 # Deploying my first project
 Let's see how we can deploy a project of a simple use case which uses some AWS components such as API Gateway and S3.
 
@@ -23,7 +27,7 @@ When you sign in using GitHub, you will see the projects associated with Sigma i
 
 After you create your project successfully, you will be directed to a page as in Fig 4.
 
-![Figure 4: Sigma IDE first look](/images/first_look.png)
+![Figure 4: Sigma IDE first look](images/first_look.png)
 
 You will be taken through a small guide on what you can do with the Sigma IDE at the beginning.
 We provide your own editor area to write your own code to get your use case a live and working one with AWS components.
@@ -118,7 +122,7 @@ exports.handler = function (event, context, callback) {
 
 ````
 
-Now to deploy your project, click on **Deploy Project** in the toolbar or Go to **Project --> Deploy Project**.
+Now to deploy your project, click on **Deploy Project** in the toolbar or Go to **Project &rarr; Deploy Project**.
 You will be asked for a commit message as shown in Fig 9.
 
 ![Figure 9: Save Project](images/commit_message.png)

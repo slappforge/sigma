@@ -1,3 +1,7 @@
+---
+description: Consume and publish real-time stream data within your SLAppForge Sigma serverless function projects, with AWS Kinesis
+---
+
 # ![](images/kinesis/kinesis_icon.svg)  AWS Kinesis
 
 

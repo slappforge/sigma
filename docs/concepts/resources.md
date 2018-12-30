@@ -1,3 +1,7 @@
+---
+description: Learn about resources in your Sigma serverless projects; actual cloud platform entities used to invoke operations and trigger functions
+---
+
 # Resources
 
 In Sigma IDE, a Sigma Project is an aggregation of resources, where a **Resource** represents an actual entity on the connected AWS account, such as a S3 bucket, an API Gateway endpoint, etc. From the project's point of view, a resource can be either a **New Resource** or an **Existing Resource**.

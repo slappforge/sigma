@@ -1,3 +1,7 @@
+---
+description: Use SQL on cloud-hosted AWS RDS relational databases, within serverless functions on your SLAppForge Sigma projects
+---
+
 # ![](images/rds/rds_icon.svg)  AWS RDS (Relational Database System)
 
 Amazon RDS is a managed relational database service that provides six familiar database engines to choose from, including

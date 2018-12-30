@@ -1,3 +1,7 @@
+---
+description: Quickly send emails from your SLAppForge Sigma serverless function projects with AWS SES, with a simple drag-n-drop configuration
+---
+
 # ![](images/ses/ses_icon.svg)  AWS SES (Simple Email Service)
 
 Amazon Simple Email Service (Amazon SES) is a cloud-based email sending service designed to help digital marketers and application developers send marketing, notification, and transactional emails. It is a reliable, cost-effective service for businesses of all sizes that use email to keep in contact with their customers.

@@ -1,3 +1,7 @@
+---
+description: Trigger Lambdas from pub/sub topics, and send messages, SMSs and push notifications to topics and mobile apps, with AWS SNS on Sigma IDE
+---
+
 # ![](images/sns/sns_icon.svg) AWS SNS (Simple Notification Service)
 
 

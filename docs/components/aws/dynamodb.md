@@ -1,3 +1,7 @@
+---
+description: Use DynamoDB scalable NoSQL document store to persist and lookup data in your serverless functions, via SLAppForge Sigma cloud IDE
+---
+
 # ![DynamoDB](images/dynamodb/dynamodb_icon.svg) AWS Dynamo DB
 
 ## DynamoDB for Operations
@@ -11,9 +15,11 @@ Siga IDE provides ability generate code to perform following operations on a Dyn
 * Scan Table
 * Query Table
 
-When injecting a new oepration, user has the ability to either create a new DynamoDB table or to use an existing DynamoDB table which is accessible by the current user credentials.
+When injecting a new operation, user has the ability to either create a new DynamoDB table
+or to use an existing DynamoDB table which is accessible by the current user credentials.
 
-Inorder to start with DynamoDB, user has to drag DyanamoDB tile to the code editor from the resources panel. Then user may choose either **New Table** or **Existing Table** option based on the requirement.
+Inorder to start with DynamoDB, user has to drag DynamoDB tile to the code editor from the resources panel.
+Then user may choose either **New Table** or **Existing Table** option based on the requirement.
 
 ![Dragging a DynamoDB resource to the code](images/dynamodb/ddb_drag.gif)
 

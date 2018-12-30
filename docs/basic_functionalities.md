@@ -1,3 +1,7 @@
+---
+description: Get to know the main components and features of SLAppForge Sigma cloud IDE, for a smooth serverless development journey
+---
+
 # Basic Functionalities of Sigma
 
 The Sigma IDE mainly contains of 4 major view panes.

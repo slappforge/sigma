@@ -1,3 +1,7 @@
+---
+description: Learn how to get started with a ready-made, sample serverless project in SLAppForge Sigma cloud IDE in just a few clicks
+---
+
 # Deploying a sample project in Sigma
 
 In sigma, you don't necessarily have to start a project from scratch.

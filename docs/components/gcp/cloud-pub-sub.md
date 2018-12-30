@@ -1,3 +1,7 @@
+---
+description: Trigger your Cloud Functions with pub/sub messages, and publish data to Cloud Pub/Sub topics via serverless functions on Sigma cloud IDE
+---
+
 # ![Cloud Pub/Sub logo](images/cloud-pub-sub/pub-sub-icon.svg) Google Cloud Pub/Sub
 
 [Google Cloud Pub/Sub](https://cloud.google.com/pubsub/) is a managed publisher-subscriber solution

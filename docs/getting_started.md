@@ -1,3 +1,7 @@
+---
+description: Kick-start your serverless development on SLAppForge Sigma cloud IDE; set up AWS credentials, connect GitHub and open your first project!
+---
+
 # Getting Started with Sigma IDE
 
 ## Prerequisites

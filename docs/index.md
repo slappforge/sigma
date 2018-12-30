@@ -1,3 +1,7 @@
+---
+description: Meet SLAppForge Sigma, the cloud IDE that simplifies serverless development on AWS/GCP; drag-n-drop, one-click deploy, sub-second testing!
+---
+
 # What is SLAppForge Sigma?
 
 The [SLAppForge Sigma IDE](https://slappforge.com/sigma/) enables you to develop serverless applications

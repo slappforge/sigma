@@ -1,3 +1,7 @@
+---
+description: Learn how to authorize your SLAppForge Sigma project to deploy on Google Cloud Platform, or invoke GCP services from other cloud platforms
+---
+
 # Google Cloud Platform: Authorization
 
 [Service accounts](https://cloud.google.com/iam/docs/understanding-service-accounts)

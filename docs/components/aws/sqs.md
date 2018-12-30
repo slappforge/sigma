@@ -1,3 +1,7 @@
+---
+description: Process and push messages on scalable AWS SQS cloud message queues, with your serverless functions in SLAppForge Sigma cloud IDE
+---
+
 # ![](images/sqs/sqs_icon.svg) AWS SQS (Simple Queue Service)
 
 Amazon Simple Queue Service (SQS) is fully managed, reliable and highly scalable cloud message queuing service to store

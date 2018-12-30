@@ -1,3 +1,7 @@
+---
+description: Real-time tail, browse and search the production and test logs of your serverless function via the SLAppForge SigmaTrail cloud log viewer
+---
+
 # Sigma Trail
 
 Sigma Trail is the component where you can view your application logs. In sigma, we have categorized logs into two types.

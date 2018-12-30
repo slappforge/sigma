@@ -1,3 +1,7 @@
+---
+description: Learn about operations, actual API or service calls in your serverless function logic inside SLAppForge Sigma cloud IDE
+---
+
 # Operations
 
 Operations are actual API or service calls in your serverless function logic (code):

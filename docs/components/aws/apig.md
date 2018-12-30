@@ -1,3 +1,7 @@
+---
+description: Quickly build and host a fully-fledged REST API to trigger your Lambda functions, with AWS API Gateway and SLAppForge Sigma cloud IDE
+---
+
 # ![](images/apig/apig_icon.svg) AWS API Gateway
 
 
