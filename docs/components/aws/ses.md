@@ -49,9 +49,12 @@ Email  address      | :white_check_mark:| The email address which user wants to 
 
 After clicking on the **Send verification email** button, a verification email will be sent to the provided email address. As soon it's verified, it will be available for user to select.
 
-### Important
-When it comes to Amazon SES, by default users are only allowed to send emails to verified email addresses. So user has to use a verified email address(s) for the **To:** email(s) as well.
+> ### Important
+When it comes to Amazon SES, by default users are only allowed to send emails to verified email addresses. So user has 
+to use a verified email address(s) for the **To:** email(s), **CC:** email(s) and **BCC:** email(s) as well.
 
-This limitation can be removed by opening an [SES Sending Limits Increase case](https://aws.amazon.com/ses/extendedaccessrequest/) in Amazon Support Center.
+> This limitation can be removed by opening an [SES Sending Limits Increase case](https://aws.amazon
+.com/ses/extendedaccessrequest/) in Amazon Support Center.
 
-More information regarding this limit can be found from [here](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/increase-sending-limits.html).
+> More information regarding this limit can be found from [here](https://docs.aws.amazon
+.com/ses/latest/DeveloperGuide/increase-sending-limits.html).
