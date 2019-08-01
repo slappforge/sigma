@@ -17,6 +17,7 @@
     	* [AWS API Gateway](components/aws/apig.md)
     	* [AWS CloudWatch Events](components/aws/cloudwatch.md)
     	* [AWS DynamoDB](components/aws/dynamodb.md)
+    	* [AWS ElastiCache](components/aws/elasticache.md)
     	* [AWS Kinesis](components/aws/kinesis.md)
     	* [AWS RDS](components/aws/rds.md)
     	* [AWS S3](components/aws/s3.md)
