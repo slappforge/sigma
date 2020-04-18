@@ -19,6 +19,8 @@ settings. _Edit_ category is equipped with most common editor related operations
 (keyboard shortcuts available). With menu items under _Project_ category, you
 can perform current project related operations.
 
+![Menu Bar and Toolbar](images/guide/menu-bar-and-toolbar.png)
+
 ## Toolbar
 
 **Toolbar** consists of shortcut buttons for a handful of quick launch operations.

@@ -84,7 +84,7 @@ you would need to enable the following APIs on your GCP project (which are not e
 
 2. Click **Enable APIs and Services** on the page header.
 
-   ![API Library: **Enable APIs and Services** button](images/gcp-enable-apis/02-enable-apis-button.png)
+   ![API Library: 'Enable APIs and Services' button](images/gcp-enable-apis/02-enable-apis-button.png)
 
 3. Type the name of each API in the search bar.
 
@@ -115,7 +115,7 @@ Create new Sigma account (if you haven't already):
 
 2. Click the **Create an account** link against the **New to Sigma?** message.
 
-   ![Sigma: **Create an account** link](../../images/signup/02-create-an-account-link.png)
+   ![Sigma: 'Create an account' link](../../images/signup/02-create-an-account-link.png)
 
 3. Fill in your first and last names, email, and phone number.
 
@@ -188,7 +188,7 @@ or a PIN of your choice, in case you used a social media log-in.
 
    If you prefer not to save the credentials in this manner, turn off the **Save to Secure Storage** toggle.
 
-   ![Credentials: **Save to Secure Storage** option](../../images/cloud-credentials/07-save-credentials-to-secure-storage-option.png)
+   ![Credentials: 'Save to Secure Storage' option](../../images/cloud-credentials/07-save-credentials-to-secure-storage-option.png)
 
 7. Click **Load Editor**.
 

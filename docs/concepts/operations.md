@@ -98,13 +98,13 @@ along with the operation that you are inserting. Top portion of the pop-up will 
 followed by a drop-down for selecting an operation.
 Below the drop-down you can configure parameters specific to the current operation.
 
-![**New** tab of a SQS pop-up showing the resource configurations, operation drop-down, and operation configurations](images/operation-sqs-get-message-with-new-queue.png)
+![New tab of a SQS pop-up showing the resource configurations, operation drop-down, and operation configurations](images/operation-sqs-get-message-with-new-queue.png)
 
 A resource defined in this way will be available for use in other triggers or operations via the **Existing** tab.
 You can also click on the down arrow on the resource entry on the palette,
 and directly drag-n-drop [an already defined resource entry](resources.md#reusing-a-resource) from there into the code.
 
-![**Existing** tab of a SQS pop-up showing the existing resource selection drop-down, operation drop-down, and operation configurations](images/operation-sqs-get-message-with-existing-queue.png)
+![Existing tab of a SQS pop-up showing the existing resource selection drop-down, operation drop-down, and operation configurations](images/operation-sqs-get-message-with-existing-queue.png)
 
 
 ## Editing an Operation

@@ -19,11 +19,11 @@ which should generally be left untouched.
 
 1. Click the *(x)* button on the toolbar to open the **Environment Variables** configuration pop-up:
 
-   ![**Environment Variables** toolbar button](images/01-environment-variables-toolbar-button.png)
+   ![Environment Variables toolbar button](images/01-environment-variables-toolbar-button.png)
 
 2. Click the **(+) Add Variable** button (below the last variable entry) to add a new entry.
 
-   ![**Environment Variables** pop-up dialog](images/02-environment-variables-pop-up-dialog.png)
+   ![Environment Variables pop-up dialog](images/02-environment-variables-pop-up-dialog.png)
 
 3. Configure your variables as desired:
 

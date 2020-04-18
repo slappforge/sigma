@@ -11,8 +11,11 @@ on Amazon Web Services (AWS).
 
 - [AWS API Gateway](apig.md)
 - [AWS CloudWatch Events](cloudwatch.md)
+- [AWS Cognito](cognito.md)
 - [AWS DynamoDB](dynamodb.md)
+- [AWS ElastiCache](elasticache.md)
 - [AWS Kinesis](kinesis.md)
+- [AWS Machine Learning (deprecated)](ml.md)
 - [AWS RDS](rds.md)
 - [AWS S3](s3.md)
 - [AWS SNS](sns.md)

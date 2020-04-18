@@ -28,14 +28,38 @@ Depending on the type of the resource, it can be used either as a trigger, or fo
 
 | Resource Type | Use as a Trigger    | Use for Operations
 | ---           | :---:               | :---:
+| Alexa Skill   | :white_check_mark:  | :x:
 | API Gateway   | :white_check_mark:  | :x:
 | CloudWatch    | :white_check_mark:  | :x:
-| DynamoDB      | :x:                 | :white_check_mark:
+| Cognito       | :white_check_mark:  | :white_check_mark:
+| DynamoDB      | :white_check_mark:  | :white_check_mark:
+| ElastiCache   | :x:                 | :white_check_mark:
+| EventBridge   | :x:                 | :white_check_mark:
 | Kinesis       | :white_check_mark:  | :white_check_mark:
 | RDS           | :x:                 | :white_check_mark:
+| Rekognition   | :x:                 | :white_check_mark:
 | S3            | :white_check_mark:  | :white_check_mark:
+| SES           | :x:                 | :white_check_mark:
 | SNS           | :white_check_mark:  | :white_check_mark:
-| SQS           | :x:                 | :white_check_mark:
+| SQS           | :white_check_mark:  | :white_check_mark:
+| Translate     | :x:                 | :white_check_mark:
+
+### GCP Resources
+
+| Resource Type     | Use as a Trigger    | Use for Operations
+| ---               | :---:               | :---:
+| Cloud Datastore   | :x:                 | :white_check_mark:
+| Cloud Pub/Sub     | :white_check_mark:  | :white_check_mark:
+| Cloud SQL         | :x:                 | :white_check_mark:
+| Cloud Storage     | :white_check_mark:  | :white_check_mark:
+| Cloud Scheduler   | :white_check_mark:  | :x:
+| HTTP Trigger      | :white_check_mark:  | :x:
+
+### Third-party Components
+
+| Resource Type  | Use as a Trigger | Use for Operations
+| ---            | :---:            | :---:
+| Twitter        | :x:              | :white_check_mark:
 
 
 ## Reusing a resource

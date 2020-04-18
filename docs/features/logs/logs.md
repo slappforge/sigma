@@ -25,7 +25,9 @@ We refer log request as the group of log lines which are generated during a one 
 
 Log request header gives you a quick insight about the Log Request. The format of the header is as follows.
 
+```
 [Date] [Time] [Request Id] [No of log lines] [TEST / PROD]
+```
 
 You can click on Log request header to expand or collapse the log lines.
 

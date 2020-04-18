@@ -16,7 +16,7 @@ Sigma tries to maintain a uniform UI/UX throughout the deployment phase.
 You can trigger a deployment by clicking the **Deploy Project** button on the toolbar,
 or the **Project &rarr; Deploy Project** menu item.
 
-![**Deploy Project** button on toolbar](images/deploy-project-toolbar-button.png)
+![Deploy Project button on toolbar](images/deploy-project-toolbar-button.png)
 
 Depending on the current state of the project, Sigma may:
 
@@ -91,6 +91,8 @@ and generates a *deployment template* representing the current status of the pro
 * permissions (execution, trigger, service authorizations etc.),
 
 and so forth.
+
+![Deployment monitor: initialization](images/deployment-initializing.png)
 
 If something goes wrong - or a bad configuration is detected - during this phase, the deployment pop-up will disappear;
 you will see an error toast indicating the appropriate error.

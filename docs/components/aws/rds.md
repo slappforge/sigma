@@ -85,7 +85,7 @@ Master Username         | :white_check_mark:| An alphanumeric string that define
 Master Password         | :white_check_mark:| A string that defines the password for the master user. Master Password must be at least eight characters long, as in "mypassword".
 Database Name           | :white_check_mark:| The name of the database.
 Database Port           | :white_check_mark:| TCP/IP port the DB instance will use for applications connections.
-DB Initialization Query | :x:               | DDL which needs to be run at the Initialization.
+DB Initialization Query | :x:               | DDL which needs to be run at the Initialization, e.g. for creating the necessary tables, indexes etc. This **should not** include the database creation (`CREATE DATABASE`) query.
 
 ### Configure RDS Operations
 

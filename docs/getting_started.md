@@ -9,9 +9,17 @@ description: Kick-start your serverless development on SLAppForge Sigma cloud ID
 * an [**AWS account**](https://aws.amazon.com/account/); you could either
 create [your own free account](https://aws.amazon.com/free/) or
 [ping us via Slack](https://launchpass.com/slappforge) for one of our demo accounts
+If you wish to develop on Google Cloud (GCP) instead, simply create a
+[**Cloud Platform project**](https://cloud.google.com/getting-started/) using your Google account.
 * a [**GitHub account**](https://github.com/); free to sign up if you don't have one already
 * a fairly new web browser; Sigma has been tested on **Google Chrome 59+**, **Mozilla Firefox 58+**,
 **Microsoft Edge 41+** and **Apple Safari 10.1.2+**
+
+**NOTE:**
+This guide focuses on getting started with the **AWS** platform.
+If you want to get start developing serverless applications with Sigma on Google Cloud (**GCP**),
+[follow our dedicated GCP guide](components/gcp/getting-started.md) instead.
+
 
 ## AWS Credentials
 
