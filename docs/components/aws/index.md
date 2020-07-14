@@ -9,7 +9,7 @@ on Amazon Web Services (AWS).
 
 ## Where to go from here
 
-- [AWS API Gateway](apig.md)
+- [AWS API Gateway (REST)](apig_rest.md)
 - [AWS CloudWatch Events](cloudwatch.md)
 - [AWS Cognito](cognito.md)
 - [AWS DynamoDB](dynamodb.md)

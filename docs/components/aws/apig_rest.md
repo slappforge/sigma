@@ -2,21 +2,21 @@
 description: Quickly build and host a fully-fledged REST API to trigger your Lambda functions, with AWS API Gateway and SLAppForge Sigma cloud IDE
 ---
 
-# ![](images/apig/apig_icon.svg) AWS API Gateway
+# ![](images/apig/apig_icon.svg) AWS API Gateway (REST)
 
 
-AWS API Gateway (APIG) is an easy and convenient framework for building and managing HTTP APIs.
-It offers additional support for REST, such as first-class support for JSON, and header and payload mappings,
+AWS **REST** API Gateway (APIG) is an easy and convenient framework for building and managing HTTP REST APIs.
+It offers specific support for REST, such as first-class support for JSON, and header and payload mappings,
 in addition to multiple back-end integrations including lambda, AWS services, direct HTTP and mock-ups.
-With APIG you can quickly set up API endpoints for your web or mobile application,
+With REST APIG you can quickly set up REST API endpoints for your web or mobile application,
 or expose your lambda as a microservice over HTTP.
 
-A HTTP endpoint in APIG involves at least 4 definitions:
+A REST endpoint in APIG involves at least 4 definitions:
 
 * the owning API entity itself ([`RestApi`](https://docs.aws.amazon.com/apigateway/api-reference/resource/rest-api/)),
 which contributes to the base hostname (subdomain) of the API
 * the [`Resource`](https://docs.aws.amazon.com/apigateway/api-reference/resource/resource/)
-that represents the HTTP path (including path parameters)
+that represents the HTTP path or the REST resource (including path parameters)
 * the [`Method`](https://docs.aws.amazon.com/apigateway/api-reference/resource/method/)
 (`GET`, `POST` etc.) corresponding to the particular endpoint
 * the [`Deployment`](https://docs.aws.amazon.com/apigateway/api-reference/resource/deployment/)
@@ -32,16 +32,16 @@ For example, an endpoint accepting POST requests at
 * a `Prod` stage that combines all of the above (and current versions of the other entities of the `blablablaa` API)
 into one live deployment "stage"
 
-Since a HTTP endpoint is strictly an event source from a lambda's point of view,
+Since an HTTP endpoint is strictly an event source from a lambda's point of view,
 Sigma supports APIG only as a trigger (i.e. you cannot "invoke" an APIG entity directly,
 although there is no restriction on accessing one as a regular HTTP endpoint (e.g. via the `requests` module)
 without direct assistance from Sigma APIs).
 
-In order to use an APIG endpoint as a trigger for a lambda function within Sigma,
+In order to use a REST APIG endpoint as a trigger for a lambda function within Sigma,
 an APIG resource should be dragged from the resources panel and dropped on top of the `event` parameter of the lambda handler.
-Then the APIG endpoint configuration panel can be used to configure the endpoint as the trigger.
+Then select the **API Type** as **REST API** from the APIG endpoint configuration panel, and configure the REST endpoint as the trigger.
 
-When configured in this manner, an API endpoint will invoke the function every time it receives a HTTP request.
+When configured in this manner, an API endpoint will invoke the function every time it receives an HTTP request.
 The structure of trigger event received by Lambda function usually contains the JSON payload of the inbound request
 (or an empty object in case of empty or missing payload),
 unless [proxy integration](#lambda-proxy-integration) is enabled (as described later).
@@ -50,7 +50,7 @@ unless [proxy integration](#lambda-proxy-integration) is enabled (as described l
 in order to handle non-JSON payloads you would need to explicitly enable [proxy integration](#lambda-proxy-integration).
 
 
-## Configuring an APIG endpoint
+## Configuring a REST APIG endpoint
 
 As mentioned before, an endpoint consists of a root API, resource path, REST method and deployment stage.
 All of these can be configured through the APIG configuration panel,

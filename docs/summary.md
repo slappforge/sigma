@@ -25,7 +25,7 @@
     * [Deployment Template Editor](features/deployment/deployment-template-editor.md)
 * [Available components](components/index.md)
     * [For AWS projects](components/aws/index.md))
-    	* [AWS API Gateway](components/aws/apig.md)
+    	* [AWS API Gateway (REST)](components/aws/apig_rest.md)
     	* [AWS CloudWatch Events](components/aws/cloudwatch.md)
     	* [AWS Cognito](components/aws/cognito.md)
     	* [AWS DynamoDB](components/aws/dynamodb.md)
