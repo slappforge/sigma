@@ -25,6 +25,7 @@
     * [Deployment Template Editor](features/deployment/deployment-template-editor.md)
 * [Available components](components/index.md)
     * [For AWS projects](components/aws/index.md))
+    	* [AWS Alexa Skill](components/aws/alexa_skill.md)
     	* [AWS API Gateway (REST)](components/aws/apig_rest.md)
     	* [AWS API Gateway (HTTP)](components/aws/apig_http.md)
     	* [AWS CloudWatch Events](components/aws/cloudwatch.md)

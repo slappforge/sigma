@@ -9,6 +9,7 @@ on Amazon Web Services (AWS).
 
 ## Where to go from here
 
+- [AWS Alexa Skill](alexa_skill.md)
 - [AWS API Gateway (REST)](apig_rest.md)
 - [AWS API Gateway (HTTP)](apig_http.md)
 - [AWS CloudWatch Events](cloudwatch.md)
