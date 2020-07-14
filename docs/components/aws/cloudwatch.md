@@ -33,7 +33,9 @@ This takes the form `cron(expression)` where `expression` consists of 6 fields:
 
 ### [Event pattern-based rules](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/CloudWatchEventsandEventPatterns.html)
 
-The following event pattern rule types are currently supported:
+#### Pre-defined by Service
+
+The following service based pre-defined event pattern rule types are currently supported:
 
 - [AWS Auto Scaling](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/EventTypes.html#auto_scaling_event_types):
  - instance launch/termination events
@@ -74,6 +76,19 @@ would [resemble the following](https://docs.aws.amazon.com/AmazonCloudWatch/late
 }
 ```
 
+#### Custom
+
+It is also possible to define a custom event pattern in the following format.
+
+```
+{
+  "source": [ "aws.ec2" ],
+  "detail-type": [ "EC2 Instance State-change Notification" ],
+  "detail": {
+    "state": [ "running" ]
+  }
+} 
+```
 
 ## Configuring a CWE rule
 
@@ -142,11 +157,17 @@ and enter `3` in the text box.
 
 #### Defining an event pattern-based rule
 
+First select the desired **Event Bus** from which you need to receive events from. By default, the **default** event bus will 
+be used. Then select the **Event Pattern Type** based on the requirement.
+
+##### Event pattern pre-defined by Service
+
 <p align="center">
-  <img src="./images/cloudwatch/event-pattern.png" alt="Defining an event pattern-based rule">
+  <img src="./images/cloudwatch/pre-defined-event-pattern.png" alt="Defining an pre-defined event pattern-based rule" width="70%">
 </p>
 
-Under the **Rule Type** selector, select the appropriate source type under the **Event Source** drop-down.
+Select the **Event Pattern Type** as **Pre-defined by Service** and then select the  appropriate event source type 
+from the **Event Source** drop-down.
 
 By default, with only the event source selected, your function would be triggered for all events of the specified type.
 In order to access more fine-grained filtering parameters,
@@ -162,6 +183,17 @@ An example is the **State** field on the above image
 as a comma-separated list.
 An example is the **Instance IDs** field on the above image.
 
+##### Custom Event pattern
+
+<p align="center">
+  <img src="./images/cloudwatch/custom-event-pattern.png" alt="Defining a custom event pattern-based rule" width="70%">
+</p>
+
+Select the **Event Pattern Type** as **Custom pattern** and then provide a JSON formatted event pattern on the editor
+below.
+
+:information_source: [See here](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/EventTypes.html) for some of the example events 
+from supported AWS services.
 
 ## Reusing an already defined CWE trigger
 
