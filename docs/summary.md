@@ -26,6 +26,7 @@
 * [Available components](components/index.md)
     * [For AWS projects](components/aws/index.md))
     	* [AWS API Gateway (REST)](components/aws/apig_rest.md)
+    	* [AWS API Gateway (HTTP)](components/aws/apig_http.md)
     	* [AWS CloudWatch Events](components/aws/cloudwatch.md)
     	* [AWS Cognito](components/aws/cognito.md)
     	* [AWS DynamoDB](components/aws/dynamodb.md)
