@@ -41,6 +41,7 @@
     	* [AWS SES](components/aws/ses.md)
     	* [AWS SNS](components/aws/sns.md)
     	* [AWS SQS](components/aws/sqs.md)
+    	* [AWS Translate](components/aws/translate.md)
     * [For Azure projects (coming soon!)](components/azure/index.md))
     * [For GCP projects](components/gcp/index.md))
     	* [Getting Started](components/gcp/getting-started.md)

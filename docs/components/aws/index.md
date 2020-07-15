@@ -25,3 +25,4 @@ on Amazon Web Services (AWS).
 - [AWS SNS](sns.md)
 - [AWS SQS](sqs.md)
 - [AWS SES](ses.md)
+- [AWS Translate](translate.md)
