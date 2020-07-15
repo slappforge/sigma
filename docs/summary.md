@@ -36,6 +36,7 @@
     	* [AWS Kinesis](components/aws/kinesis.md)
     	* [AWS Machine Learning (deprecated)](components/aws/ml.md)
     	* [AWS RDS](components/aws/rds.md)
+    	* [AWS Rekognition](components/aws/rekognition.md)
     	* [AWS S3](components/aws/s3.md)
     	* [AWS SES](components/aws/ses.md)
     	* [AWS SNS](components/aws/sns.md)

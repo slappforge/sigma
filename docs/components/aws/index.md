@@ -20,6 +20,7 @@ on Amazon Web Services (AWS).
 - [AWS Kinesis](kinesis.md)
 - [AWS Machine Learning (deprecated)](ml.md)
 - [AWS RDS](rds.md)
+- [AWS Rekognition](rekognition.md)
 - [AWS S3](s3.md)
 - [AWS SNS](sns.md)
 - [AWS SQS](sqs.md)
