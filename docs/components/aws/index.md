@@ -16,6 +16,7 @@ on Amazon Web Services (AWS).
 - [AWS Cognito](cognito.md)
 - [AWS DynamoDB](dynamodb.md)
 - [AWS ElastiCache](elasticache.md)
+- [AWS EventBridge](eventbridge.md)
 - [AWS Kinesis](kinesis.md)
 - [AWS Machine Learning (deprecated)](ml.md)
 - [AWS RDS](rds.md)

@@ -31,7 +31,7 @@ This takes the form `cron(expression)` where `expression` consists of 6 fields:
 - day-of-week (`1-7` or `SUN-SAT`, with wildcards `, - * ? L #`)
 - year (`1970-2199`, with wildcards `, - * /`)
 
-### [Event pattern-based rules](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/CloudWatchEventsandEventPatterns.html)
+### <a name="event-pattern-rules"> [Event pattern-based rules](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/CloudWatchEventsandEventPatterns.html)
 
 #### Pre-defined by Service
 

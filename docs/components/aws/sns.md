@@ -4,7 +4,6 @@ description: Trigger Lambdas from pub/sub topics, and send messages, SMSs and pu
 
 # ![](images/sns/sns_icon.svg) AWS SNS (Simple Notification Service)
 
-
 Amazon Simple Notification Service (SNS) is a flexible, fully managed pub-sub messaging and mobile notifications service
 for coordinating the delivery of messages to subscribing endpoints and clients. With SNS you can fan-out messages to a
 large number of subscribers, including distributed systems and services, and mobile devices.

@@ -32,6 +32,7 @@
     	* [AWS Cognito](components/aws/cognito.md)
     	* [AWS DynamoDB](components/aws/dynamodb.md)
     	* [AWS ElastiCache](components/aws/elasticache.md)
+    	* [AWS EventBridge](components/aws/eventbridge.md)
     	* [AWS Kinesis](components/aws/kinesis.md)
     	* [AWS Machine Learning (deprecated)](components/aws/ml.md)
     	* [AWS RDS](components/aws/rds.md)
