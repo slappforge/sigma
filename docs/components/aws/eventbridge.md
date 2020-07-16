@@ -28,6 +28,7 @@ Field       | Required            | Supports Variables  | Description
 Event Bus   | :white_check_mark:  | :x:                 | The event bus that should receive the event
 Source      | :white_check_mark:  | :white_check_mark:  | The source of the event
 Time        | :x:                 | :white_check_mark:  | The time stamp of the event, per [RFC3339](https://www.rfc-editor.org/rfc/rfc3339.txt). If this is not provided, the time stamp of the `PutEvents` call will be used.
+Resources   | :x:                 | :white_check_mark:  | AWS resources, identified by Amazon Resource Name (ARN), which the event primarily concerns
 Detail Type | :white_check_mark:  | :white_check_mark:  | Free-form string used to decide what fields to expect in the event detail
 Detail      | :x:                 | :x:                 | A valid JSON string that contains the event fields and nested sub-objects
 
