@@ -105,3 +105,24 @@ value of the **Route** field.
 It is also possible to configure the **Default Route** of an HTTP API to trigger the Lambda function. For that, you can
 check the **Use Default Route** check box on the configuration panel. In such a case, all the requests that don't match
 any defined routes of the API, will be directed to this Lambda function.
+
+### Additional configurations
+
+#### <a name="cors"> CORS (cross-origin resource sharing)
+
+If you are invoking the API via JavaScript on a browser (e.g. in case of a webapp frontend),
+access control policies of the browser may not allow your application to read the responses delivered by APIG.
+For bypassing this, you would need to
+[enable CORS on your APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-cors.html).
+
+When you are configuring a HTTP API on Sigma, you can expand the **CORS Configuration** sub panel and define the 
+following CORS related properties.
+ 
+| Property Name | Corresponding CORS Header | Description | Example
+|---------------|---------------------------|-------------|---------------
+|Allowed Headers | `Access-Control-Allow-Headers` | Indicates which HTTP headers can be used when making the request | `Authorization,X-Custom-Header` or `*`
+|Allowed Methods | `Access-Control-Allow-Methods` | Specifies the method or methods allowed when accessing the resource | `GET,POST,DELETE` or `*`
+|Allowed Origins | `Access-Control-Allow-Origin` | Specifies from which origins, browsers are allowed to access the resource | `https://foo.com,https://bar.com` or `http://*` or `https://*` or `*`
+|Exposed Headers | `Access-Control-Expose-Headers` | Whitelists headers that Javascript in browsers are allowed to access | `Date,x-api-id`
+|Max Age | `Access-Control-Max-Age` | Indicates how long the results of a preflight request can be cached | `300`
+|Allow Credentials | `Access-Control-Allow-Credentials` | Indicates whether or not the response to the request can be exposed when the `credentials` flag is true | `true` or `false`
